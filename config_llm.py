@@ -34,7 +34,7 @@ def groq_provider():
 
 llama = ChatGroq(
              api_key=GROQ_API_KEY,
-             model= "llama3-70b-8192"
+             model= "groq/llama3-70b-8192"
          )
           
 
