@@ -115,9 +115,9 @@ if option == 'Pesquisar':
     #st.markdown("### Quantas recomendações de lugares deseja:")
     #total_items = st.radio(" ", [1, 2, 3, 4, 5], horizontal=True)
     
-    #dict_loja = {'Amazon':'https://amazon.com.br', 'Imaginarium': 'https://loja.imaginarium.com.br/', 'Mercado Livre': 'https://mercadolivre.com.br'}   
-    #loja = selecionar_loja()        
-    #st.write("Loja:", dict_loja.get(loja))
+    dict_loja = {'Amazon':'https://amazon.com.br', 'Imaginarium': 'https://loja.imaginarium.com.br/', 'Mercado Livre': 'https://mercadolivre.com.br'}   
+    loja = selecionar_loja()        
+    st.write("Loja:", dict_loja.get(loja))
     
     html_page_crewai = """
     <div style="background-color:black;padding=60px">
