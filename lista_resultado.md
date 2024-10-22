@@ -1,7 +1,5 @@
-Aqui estão três sugestões de presentes interessantes para uma menina adolescente com um orçamento de menos de 200 reais no site da Imaginarium:
+1. **Bloco Organizador Semanal Finanças**: This is a great educational gift for boys that teaches them about finance and organization. It's available on the Imaginarium website for 49,90 reais.
+2. **Cortador de Pizza Machado**: This is a fun and interactive gift that teaches boys about fractions and measurements. It's available on the Imaginarium website for 39,90 reais.
+3. **Caderno Anotações Relevo Aventura**: This is an exciting educational gift that encourages boys to explore their creativity and imagination. It's available on the Imaginarium website for 44,90 reais.
 
-1. Mochila Jeans Pompom Rosa Imaginarium - Uma mochila divertida e colorida para uma menina adolescente, com um design jovem e fashion. Preço: R$ 149,90.
-2. Presente para Crianças e Adolescentes - Imaginarium - Uma caixa de presente criativa que inclui uma variedade de itens como adesivos, marcadores, lápizes de cor e muito mais. Preço: R$ 99,90.
-3. Roupas infantis direto da fabricante é aqui na Imaginarium Kids - Uma Roupa infantil divertida e confortável para uma menina adolescente, com designs variados e cores vibrantes. Preço: R$ 29,90.
-
-Essas sugestões devem agradar a uma menina adolescente e se encaixam no orçamento de menos de 200 reais.
+All of these gifts are under 50 reais and are perfect for boys who love to learn and have fun at the same time!

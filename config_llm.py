@@ -20,17 +20,17 @@ OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
 #litellm.set_verbose = True
 
-# def groq_provider():
-    # return litellm.completion(
-        # model="groq/llama3-8b-8192",  # Certifique-se de que este é o modelo correto do Groq
-        # messages=[
-            # {"role": "system", "content": "Você é um guia turístico especializado."},
-            # {"role": "user", "content": "Recomende os melhores pontos turísticos do Brasil."}
-        # ],
-        # #type="chat",  # Definindo como chat para o Groq
-        # tools=[],
-        # tool_choice="auto"
-    # )
+def groq_provider():
+     return litellm.completion(
+         model="groq/llama3-8b-8192",  # Certifique-se de que este é o modelo correto do Groq
+         messages=[
+             {"role": "system", "content": "Você é um guia turístico especializado."},
+             {"role": "user", "content": "Recomende os melhores pontos turísticos do Brasil."}
+         ],
+         type="chat",  # Definindo como chat para o Groq
+         tools=[],
+         tool_choice="auto"
+     )
 
 llama = ChatGroq(
              api_key=GROQ_API_KEY,
