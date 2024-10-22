@@ -27,7 +27,16 @@ def selecionar_genero():
     horizontal = True
     )
     return genero
-        
+    
+def selecionar_loja():
+    loja = st.radio(
+    "Loja Online:",
+    ["Amazon", "Imaginarium", 'Mercado Livre'],
+    horizontal = True
+    )
+    return loja
+
+
 
 # def groq_provider():
     # return litellm.completion(
@@ -106,6 +115,10 @@ if option == 'Pesquisar':
     #st.markdown("### Quantas recomendações de lugares deseja:")
     #total_items = st.radio(" ", [1, 2, 3, 4, 5], horizontal=True)
     
+    #dict_loja = {'Amazon':'https://amazon.com.br', 'Imaginarium': 'https://loja.imaginarium.com.br/', 'Mercado Livre': 'https://mercadolivre.com.br'}   
+    #loja = selecionar_loja()        
+    #st.write("Loja:", dict_loja.get(loja))
+    
     html_page_crewai = """
     <div style="background-color:black;padding=60px">
         <p style='text-align:center;font-size:40px;font-weight:bold'>3 Sugestões de Presentes</p>
@@ -114,9 +127,10 @@ if option == 'Pesquisar':
     st.markdown(html_page_crewai, unsafe_allow_html=True)
     
     url = "https://loja.imaginarium.com.br/"
+    #url = dict_loja.get(loja)
     
     inputs = {
-            'site': url,
+            'url': url,
             'genero':genero,
             'preco':preco,
             'tipo':tipo,
