@@ -50,6 +50,10 @@ def selecionar_genero():
         # st.error("A resposta não contém o conteúdo esperado.")
 
 # Interface de Streamlit
+
+img0 = Image.open("img/3_gift.png")
+st.image(img0, caption="", use_column_width=True)
+
 html_page_title = """
     <div style="background-color:black;padding=60px">
         <p style='text-align:center;font-size:50px;font-weight:bold'>Presente Pra Ti</p>
@@ -57,7 +61,7 @@ html_page_title = """
 """
 st.markdown(html_page_title, unsafe_allow_html=True)
 
-img = Image.open("img/gift.png")
+img = Image.open("img/gift2.png")
 st.sidebar.image(img, caption="", use_column_width=True)
 
 st.sidebar.markdown("# Menu")
