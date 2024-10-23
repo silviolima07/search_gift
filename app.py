@@ -189,7 +189,7 @@ if option == 'Pesquisar':
 
     if st.button("INICIAR"):
         inputs = {
-            'site':' https://loja.imaginarium.com.br/',
+            'site': url,
             'genero':genero,
             'preco':preco,
             'tipo':tipo,
