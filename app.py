@@ -126,17 +126,17 @@ if option == 'Pesquisar':
     """
     st.markdown(html_page_crewai, unsafe_allow_html=True)
     
-    url = "https://loja.imaginarium.com.br/"
-    #url = dict_loja.get(loja)
+    #url = "https://loja.imaginarium.com.br/"
+    url = dict_loja.get(loja)
     
     inputs = {
-            'url': url,
+            'site': url,
             'genero':genero,
             'preco':preco,
             'tipo':tipo,
             'search_query': f"Usar a ferramenta de busca e pesquisar {url} na url {'site'} presentes {tipo} para {genero}"
         }
-    busca= f"Usar a ferramenta de busca e pesquisar em {url}"
+    busca= f"Usar a ferramenta de busca e pesquisar em {site}"
     st.markdown("#### "+str(f'{busca}'))
     
     busca= f"Pesquisar 3 presentes {tipo}  para {genero}."     
