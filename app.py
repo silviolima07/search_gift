@@ -214,6 +214,6 @@ if option == 'Pesquisar':
                 
 if option == 'About':
     st.markdown("### Sugestão de presentes educativos, interessantes e uteís.")
-    st.markdown("### Este aplicativo faz uma busca e sugere 3 presentes de acordo os critéros definidos.")
+    st.markdown("### Este aplicativo faz uma busca e sugere 3 presentes de acordo com os critéros definidos.")
     st.markdown("### Modelo llama acessado via Groq.")
 
