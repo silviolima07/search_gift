@@ -121,7 +121,7 @@ if option == 'Pesquisar':
     
     html_page_crewai = """
     <div style="background-color:black;padding=60px">
-        <p style='text-align:center;font-size:40px;font-weight:bold'>3 Sugestões de Presentes</p>
+        <p style='text-align:center;font-size:40px;font-weight:bold'>Sugestões de Presentes</p>
     </div>
     """
     st.markdown(html_page_crewai, unsafe_allow_html=True)
