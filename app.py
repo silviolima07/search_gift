@@ -117,7 +117,7 @@ if option == 'Pesquisar':
     
     dict_loja = {'Amazon':'https://amazon.com.br', 'Imaginarium': 'https://loja.imaginarium.com.br/', 'Mercado Livre': 'https://mercadolivre.com.br'}   
     loja = selecionar_loja()        
-    st.write("Loja:", dict_loja.get(loja))
+    #st.write("Loja:", dict_loja.get(loja))
     
     html_page_crewai = """
     <div style="background-color:black;padding=60px">
