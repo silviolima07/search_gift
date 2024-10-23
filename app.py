@@ -133,8 +133,8 @@ if option == 'Pesquisar':
             'site': url,
             'genero':genero,
             'preco':preco,
-            'tipo':tipo,
-            'search_query': f"Usar a ferramenta de busca e pesquisar {url} na url {site} presentes {tipo} para {genero}"
+            'tipo':tipo
+            #'search_query': f"Usar a ferramenta de busca e pesquisar {url} na url {site} presentes {tipo} para {genero}"
         }
     busca= f"Usar a ferramenta de busca e pesquisar em {site}"
     st.markdown("#### "+str(f'{busca}'))
