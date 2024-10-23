@@ -136,8 +136,11 @@ if option == 'Pesquisar':
             'tipo':tipo
             #'search_query': f"Usar a ferramenta de busca e pesquisar {url} na url {site} presentes {tipo} para {genero}"
         }
-    busca= "Usar a ferramenta de busca e pesquisar em " + f"{site}"
+    busca= "Usar a ferramenta de busca e pesquisar no site"
     st.markdown("#### "+str(f'{busca}'))
+
+    busca= "Site:"
+    st.markdown("#### "+str(f'{site}'))
     
     busca= f"Pesquisar 3 presentes {tipo}  para {genero}."     
     st.markdown("#### "+str(f'{busca}'))
