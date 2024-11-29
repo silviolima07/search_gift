@@ -3,19 +3,6 @@ from crewai_tools import SerperDevTool
 
 import streamlit as st
 
-# Defina a função do provedor Groq
-# def groq_provider():
-    # return litellm.completion(
-        # model="groq/llama3-8b-8192",  # Certifique-se de que este é o modelo correto do Groq
-        # messages=[
-            # {"role": "system", "content": "Você é um guia turístico especializado."},
-            # {"role": "user", "content": "Recomende os melhores pontos turísticos do Brasil."}
-        # ],
-        # #type="chat",
-        # tools=[],
-        # tool_choice="auto"
-    # )
-
 # Initialize the tool for internet searching capabilities
 serper_tool = SerperDevTool()
 
