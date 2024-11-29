@@ -3,7 +3,7 @@ import streamlit as st
 from crewai import Crew, Process
 from my_agents import criar_agente_guia_compras
 from my_tasks import criar_task_recomendar
-#from config_llm import llama
+
 import os
 from PIL import Image
 #import litellm  # Importando o LiteLLM para usar o Groq
@@ -157,7 +157,7 @@ if option == 'Pesquisar':
     # Configuração do CrewAI com o Groq via LiteLLM
     # Aqui estamos passando o provider diretamente para o agente e task
     #provider = groq_provider()  # Usando o provider do Groq
-    llm = llama # provider groq
+    #llm = llama # provider groq
        
     #st.write(type(llm))
     #st.write("Mdelo llm ok")
