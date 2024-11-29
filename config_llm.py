@@ -41,4 +41,4 @@ def groq_provider():
 #from groq import Groq
 
 
-llama = "llama-3.1-8b-instant" # "groq/llama3-70b-8192"
+llama = "groq/llama-3.1-8b-instant" # "groq/llama3-70b-8192"
