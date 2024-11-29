@@ -1,7 +1,6 @@
 from crewai import Agent
-from crewai_tools import (
-    SerperDevTool
-)
+from crewai_tools import SerperDevTool
+
 #import litellm
 
 import streamlit as st
