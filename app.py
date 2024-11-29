@@ -3,7 +3,7 @@ import streamlit as st
 from crewai import Crew, Process
 from my_agents import criar_agente_guia_compras
 from my_tasks import criar_task_recomendar
-from config_llm import llama
+#from config_llm import llama
 import os
 from PIL import Image
 #import litellm  # Importando o LiteLLM para usar o Groq
