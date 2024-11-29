@@ -1,6 +1,5 @@
 # config.py
 import os
-from langchain_groq import ChatGroq
 from dotenv import load_dotenv
 
 from groq import Groq
@@ -8,7 +7,7 @@ from groq import Groq
 # Carregar variáveis de ambiente
 load_dotenv()
 
-groq- Groq
+groq = Groq
 
 
 
