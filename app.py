@@ -21,10 +21,6 @@ import warnings
 warnings.filterwarnings("ignore", category=UserWarning)
 warnings.filterwarnings("ignore", message="Overriding of current TracerProvider is not allowed")
 
-from MyLLM import MyLLM
-
-# Definir o modelo de linguagem
-llm = MyLLM.GROQ_LLAMA
 
 
 def selecionar_genero():
