@@ -1,5 +1,9 @@
 Presentes recomendados:
 
-1) Kit de Química Básica Imaginarium: Desenvolva habilidades científicas com este kit de química básica que inclui materiais para realizar 30 experimentos divertidos e educacionais. R$ 39,90
-2) Jogo de Matemática Imaginarium - Níveis e Desafios: Aprenda matemática de forma divertida com este jogo que apresenta desafios e níveis progressivos para desenvolver habilidades lógicas e resolução de problemas. R$ 34,90
-3) Kit de Robótica Imaginarium - Iniciação: Introduza o mundo da robótica ao seu filho com este kit que inclui peças para montar um robô que pode ser programado e controlado remotamente. R$ 44,90
+1) Kit de Química Criativa para Crianças: Este kit de química é ideal para crianças curiosas que amam experimentar e aprender. Contém materiais para 10 experimentos diferentes, como fazer lava lamps, criaturas gelatinosas e muito mais. R$39,90
+
+2) Jogo de Lógica e Espaço 3D: Desenvolva a habilidade de resolução de problemas e a coordenação espacial com este jogo de lógica. Consiste em 12 desafios que aumentam gradualmente de dificuldade, ideal para crianças a partir de 6 anos. R$44,90
+
+3) Kit de Robótica para Crianças: Introduza as crianças ao mundo da robótica com este kit fácil de montar. Contém peças para construir um robô que pode ser programado para realizar tarefas, como seguir uma linha ou evitar obstáculos. R$46,90
+
+Espero que essas sugestões sejam úteis!
