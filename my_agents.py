@@ -4,7 +4,8 @@ import crewai_tools
 
 from crewai_tools import SerperDevTool
 
-from MyLLM import MyLLM
+#from MyLLM import MyLLM
+from config_llm import llama
 
 from dotenv import load_dotenv
 # Carregar variáveis de ambiente
@@ -20,7 +21,7 @@ GROQ_API_KEY = os.getenv('GROQ_API_KEY')
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
 # Definir o modelo de linguagem
-llm = MyLLM.GROQ_LLAMA
+llm = llama
 
 
 
@@ -38,8 +39,8 @@ guia_compras = Agent(
         ,
         llm=llm, # estava provider=provider
         verbose=True,
-        memory=False
-        #tools=[serper_tool]
+        memory=False,
+        tools=[serper_tool]
     )
 
     
