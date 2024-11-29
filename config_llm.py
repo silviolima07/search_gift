@@ -32,13 +32,13 @@ def groq_provider():
          tool_choice="auto"
      )
 
-llama = ChatGroq(
-             api_key=GROQ_API_KEY,
-             model= "groq/llama3-70b-8192"
-         )
+#llama = ChatGroq(
+#             api_key=GROQ_API_KEY,
+#             model= "groq/llama3-70b-8192"
+#         )
           
 
 #from groq import Groq
 
 
-#llama = "llama-3.1-8b-instant" # "groq/llama3-70b-8192"
+llama = "llama-3.1-8b-instant" # "groq/llama3-70b-8192"
