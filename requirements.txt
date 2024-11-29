@@ -1,3 +1,6 @@
+-c constraints.txt
+crewai==0.83.0
+litellm==1.53.1
 crewai==0.83.0
 crewai-tools==0.14.0
 groq==0.9.0
