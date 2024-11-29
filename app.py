@@ -1,9 +1,19 @@
 import pandas as pd
 import streamlit as st
 from crewai import Crew, Process
-from my_agents import criar_agente_guia_compras
-from my_tasks import criar_task_recomendar
+from my_agents import guia_compras
+from my_tasks import recomendar
 
+
+from dotenv import load_dotenv
+# Carregar variáveis de ambiente
+load_dotenv()
+import os
+
+# Obter a chave da API GROQ
+GROQ_API_KEY = os.getenv('GROQ_API_KEY')
+
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 import os
 from PIL import Image
 #import litellm  # Importando o LiteLLM para usar o Groq
@@ -14,17 +24,8 @@ warnings.filterwarnings("ignore", message="Overriding of current TracerProvider 
 from MyLLM import MyLLM
 
 # Definir o modelo de linguagem
-#llm = ChatOpenAI(model_name="gpt-4o-mini")
 llm = MyLLM.GROQ_LLAMA
 
-# from opentelemetry import trace
-# from opentelemetry.sdk.trace import TracerProvider
-
-# trace.set_tracer_provider(TracerProvider())
-# trace.set_tracer_provider(None)
-
-#import logging
-#logging.basicConfig(level=logging.DEBUG)
 
 def selecionar_genero():
     genero = st.radio(
@@ -42,29 +43,6 @@ def selecionar_loja():
     )
     return loja
 
-
-
-# def groq_provider():
-    # return litellm.completion(
-        # model="groq/llama3-8b-8192",  # Certifique-se de que este é o modelo correto do Groq
-        # messages=[
-            # {"role": "system", "content": "Você é um guia turístico especializado."},
-            # {"role": "user", "content": "Recomende os melhores pontos turísticos do Brasil."}
-        # ],
-        # #type="chat",  # Definindo como chat para o Groq
-        # tools=[],
-        # tool_choice="auto"
-    # )
-
-# # Função para exibir a resposta no Streamlit
-# def exibir_resposta(result):
-    # if 'choices' in result and len(result['choices']) > 0:
-        # content = result['choices'][0]['message']['content']
-        # st.markdown(content)  # Exibe o conteúdo retornado pela API
-    # else:
-        # st.error("A resposta não contém o conteúdo esperado.")
-
-# Interface de Streamlit
 
 img0 = Image.open("img/3_gift.png")
 st.image(img0, caption="", use_column_width=True)
@@ -159,11 +137,8 @@ if option == 'Pesquisar':
     #provider = groq_provider()  # Usando o provider do Groq
     #llm = llama # provider groq
        
-    #st.write(type(llm))
-    #st.write("Mdelo llm ok")
-    guia_compras = criar_agente_guia_compras(llm) 
     #st.write("Agente guia_compras ok")
-    recomendar = criar_task_recomendar(guia_compras)  
+    #recomendar = recomendar
     #st.write("Task recomendar ok")
     
     #st.markdown("## Aperte os cintos e boa viagem")
@@ -182,19 +157,7 @@ if option == 'Pesquisar':
              
     
     
-    #with col2:
-    #    if estado == 'Bahia':
-    #        img_estado = Image.open("img/bahia.png")
-    #    elif estado == 'Rio de Janeiro':
-    #        img_estado = Image.open("img/rio_de_janeiro.png")
-    #    elif estado == 'Ceará':
-    #        img_estado = Image.open("img/ceara.png")
-    #    elif estado == 'Santa Catarina':
-    #        img_estado = Image.open("img/santa_catarina.png")  
-    #    elif estado == 'Pernambuco':
-    #        img_estado = Image.open("img/pernambuco.png")    
-        
-     #   st.image(img_estado, caption="", use_column_width=False)
+  
 
     if st.button("INICIAR"):
         inputs = {

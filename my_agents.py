@@ -1,29 +1,46 @@
 from crewai import Agent
+
+import crewai_tools
+
 from crewai_tools import SerperDevTool
 
-import streamlit as st
+from MyLLM import MyLLM
+
+from dotenv import load_dotenv
+# Carregar variáveis de ambiente
+load_dotenv()
+
+import os
+
+load_dotenv()
+
+# Obter a chave da API GROQ
+GROQ_API_KEY = os.getenv('GROQ_API_KEY')
+
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+
+# Definir o modelo de linguagem
+llm = MyLLM.GROQ_LLAMA
+
+
 
 # Initialize the tool for internet searching capabilities
 serper_tool = SerperDevTool()
 
 # Configuração do agente
 
-def criar_agente_guia_compras(provider):
-    
-    guia_compras = Agent(
+   
+guia_compras = Agent(
         role="guia de compras",
         goal="Orientar pessoas que fazem compras.",
         backstory=
             "Você é responsável por orientar na melhor compra."   
         ,
-        llm=provider, # estava provider=provider
+        llm=llm, # estava provider=provider
         verbose=True,
-        memory=False,
-        tools=[serper_tool]
+        memory=False
+        #tools=[serper_tool]
     )
-    #st.markdown("#### Agente guia turistico sua mente sera o "+ str(provider.model))
-    return guia_compras   
- 
 
     
     

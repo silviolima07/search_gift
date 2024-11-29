@@ -1,7 +1,5 @@
 Presentes recomendados:
-1) Acessórios para o hábito de desenhar (álbum de desenho, lápis de cor, lápis de grafite, etc.):
- - Desbloqueie a criatividade da menina adolescente com essa coleção de acessórios de desenho. O valor de aproximadamente R$ 70 reais é acessível e inclui um livro de desenho de alta qualidade, três linhas de lápis de cor vibrantes e cinco lápis de grafite com ponta firme.
-2) Kit de beleza para menina:
- - Este kit contém produtos para cuidar da pele, os lábios e os cabelos, como um creme hidratante, um gloss de lábios, um condicionador e um xampu em diferentes fragrâncias. Também inclui um kit de maquiagem com diferentes cores de ruge. O preço é de R$ 95 aproximadamente, tornando-o uma ótima opção para uma menina adolescente.
-3) Headphones Bluetooth com microfonia:
- - Esses fones de ouvido Bluetooth são ideais para música, jogos ou podcasts, oferecendo uma experiência de som cristalino. Eles têm uma microfonia handy que permite a filha da adolescente fazer vídeos ou gravar podcasts, com um custo estimado de cerca de R$ 89 reais.
+
+1) Caneca Personalizável: Caneca de cerâmica branca personalizável com nome ou mensagem, ideal para homens que gostam de ter seus objetos personalizados. Valor: R$ 29,90
+2) Lanterna de Emergência: Lanterna de emergência com LEDs super brilhantes, bateria recarregável e design compacto, perfeita para homens que gostam de estar preparados para qualquer situação. Valor: R$ 39,90
+3) Chaveiro com Canivete: Chaveiro com canivete e outros objetos úteis, como abridor de latas e ponta de fósforo, ideal para homens que gostam de ter ferramentas práticas à mão. Valor: R$ 44,90
