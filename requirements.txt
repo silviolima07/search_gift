@@ -5,5 +5,4 @@ pandas==2.2.2
 pysqlite3-binary
 langchain-openai
 streamlit==1.38.0
-openai==1.54.0 
 python-dotenv==1.0.1
