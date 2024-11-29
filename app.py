@@ -41,7 +41,7 @@ def selecionar_loja():
 
 
 img0 = Image.open("img/3_gift.png")
-st.image(img0, caption="", use_container_width=True)
+st.image(img0, caption="", use_column_width=True)
 
 html_page_title = """
     <div style="background-color:black;padding=60px">
@@ -51,7 +51,7 @@ html_page_title = """
 st.markdown(html_page_title, unsafe_allow_html=True)
 
 img = Image.open("img/gift2.png")
-st.sidebar.image(img, caption="", use_container_width=True)
+st.sidebar.image(img, caption="", use_column_width=True)
 
 st.sidebar.markdown("# Menu")
 option = st.sidebar.selectbox("Menu", ["Pesquisar", 'About'], label_visibility='hidden')
