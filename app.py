@@ -17,14 +17,14 @@ from MyLLM import MyLLM
 #llm = ChatOpenAI(model_name="gpt-4o-mini")
 llm = MyLLM.GROQ_LLAMA
 
-from opentelemetry import trace
-from opentelemetry.sdk.trace import TracerProvider
+# from opentelemetry import trace
+# from opentelemetry.sdk.trace import TracerProvider
 
-trace.set_tracer_provider(TracerProvider())
-trace.set_tracer_provider(None)
+# trace.set_tracer_provider(TracerProvider())
+# trace.set_tracer_provider(None)
 
-import logging
-logging.basicConfig(level=logging.DEBUG)
+#import logging
+#logging.basicConfig(level=logging.DEBUG)
 
 def selecionar_genero():
     genero = st.radio(

@@ -3,7 +3,6 @@ from crewai_tools import SerperDevTool
 #import litellm
 
 import streamlit as st
-from my_tools import url_checker_tool
 
 # Defina a função do provedor Groq
 # def groq_provider():

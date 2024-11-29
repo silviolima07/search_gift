@@ -16,11 +16,3 @@ def url_checker_tool(url:str):
     except requests.exceptions.RequestException as e:
         return f"Error: {e}"    
 
-################################
-
-
-#url_checker_tool = Tool(
-#    name="URL Checker",
-#    description="Checks if a given URL is accessible.",
-#    func=check_url
-#)

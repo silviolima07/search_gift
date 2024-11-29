@@ -1,12 +1,5 @@
 from crewai import Task
 import streamlit as st
-from textwrap import dedent
-
-from pydantic import BaseModel
-from typing import List
-
-class RecomendaOuput(BaseModel):
-    recomendacoes: List[str]
 
 def criar_task_recomendar(guia_compras):
     recomendar = Task(
