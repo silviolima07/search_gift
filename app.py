@@ -11,6 +11,12 @@ import warnings
 warnings.filterwarnings("ignore", category=UserWarning)
 warnings.filterwarnings("ignore", message="Overriding of current TracerProvider is not allowed")
 
+from MyLLM import MyLLM
+
+# Definir o modelo de linguagem
+#llm = ChatOpenAI(model_name="gpt-4o-mini")
+llm = MyLLM.GROQ_LLAMA
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 
