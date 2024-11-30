@@ -20,8 +20,8 @@ recomendar = Task(
         """
         Usar a ferramenta de busca e pesquisar apenas e somente no site {site}.
         Encontrar 3 presentes {tipo}  para {genero}, com preço abaixo de {preco}, pesquisar somente no Brasil.
-        Listar os produtos encontrados.
         Sua resposta deve incluir: Nome, Preço e Descrição.
+        Salvar num arquivo formato Markdown.
              """,
          expected_output=
              """
