@@ -5,6 +5,8 @@ from my_agents import guia_compras
 from my_tasks import recomendar
 from dotenv import load_dotenv
 
+from litellm import OpenAIClient
+
 from dotenv import load_dotenv
 # Carregar variáveis de ambiente
 load_dotenv()
@@ -141,6 +143,7 @@ if option == 'Pesquisar':
     
     # Certifique-se de que a Crew está configurada corretamente
     crew = Crew(
+        provider=OpenAIClient(api_key=OPENAI_API_KEY)
         agents=[guia_compras],
         tasks=[recomendar],
         process=Process.sequential,  # Processamento sequencial das tarefas
