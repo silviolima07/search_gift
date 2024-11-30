@@ -158,8 +158,6 @@ if option == 'Pesquisar':
         #time_limit_seconds=300  # Ajuste o limite de tempo (em segundos)
     )
              
-    
-    #st.markdown("### LLM: "+ str(llm))
   
 
     if st.button("INICIAR"):
