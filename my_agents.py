@@ -5,7 +5,7 @@ import crewai_tools
 from crewai_tools import SerperDevTool
 
 #from MyLLM import MyLLM
-from config_llm import llama
+from config_llm import llama, openai
 
 from dotenv import load_dotenv
 # Carregar variáveis de ambiente
@@ -21,7 +21,7 @@ GROQ_API_KEY = os.getenv('GROQ_API_KEY')
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
 # Definir o modelo de linguagem
-llm = llama
+llm = openai
 
 
 
