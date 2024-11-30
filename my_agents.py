@@ -17,12 +17,12 @@ import os
 # Obter a chave da API GROQ
 GROQ_API_KEY = os.getenv('GROQ_API_KEY')
 
-#OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
 # Definir o modelo de linguagem
 
-llm = MyLLM.GROQ_MIXTRAL
-#llm = MyLLM.GPT4o_mini
+#llm = MyLLM.GROQ_MIXTRAL
+llm = MyLLM.GPT4o_mini
 #llm = MyLLM.GROQ_LLAMA
 
 
