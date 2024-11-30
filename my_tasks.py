@@ -20,13 +20,13 @@ recomendar = Task(
     "Use a ferramenta de busca para pesquisar somente no site {site}. "
     "Encontre 3 presentes {tipo} para {genero}, com valor abaixo de {preco}, disponíveis no Brasil. "
     "Retorne o resultado com Nome, Descrição e Preço. Apenas salve a resposta em um arquivo Markdown (md) no seguinte formato:"
-    "\n\nPresentes recomendados:\n"
-    "1) Nome:\n   Descricao:\n   Preço:\n"
+    "### Presentes recomendados:\n"
+    "1)### Nome:\n    ### Descricao:\n    ### Preço:\n"
              ),
          expected_output=(
     "Um arquivo Markdown (md) com 3 presentes recomendados, formatado assim:"
-    "\n\nPresentes recomendados:\n"
-    "1) Nome:\n   Descricao:\n   Preço:\n"
+    "### Presentes recomendados:\n"
+    "#### 1) Nome:\n  #### Descricao:\n  #### Preço:\n"
             ), 
          agent=guia_compras,
          #tools = [serper_tool],
