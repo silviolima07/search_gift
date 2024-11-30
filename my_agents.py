@@ -6,7 +6,7 @@ from crewai_tools import SerperDevTool
 
 from MyLLM import MyLLM
 
-from config_model import selecionar_modelo
+from config_modelo import selecionar_modelo
 
 from dotenv import load_dotenv
 # Carregar variáveis de ambiente
