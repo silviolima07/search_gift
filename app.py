@@ -22,7 +22,7 @@ OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 st.write("OPENAI_API_KEY:", OPENAI_API_KEY)
 
 # Verifica se as chaves estão acessíveis
-assert os.getenv("OPENAI_API_KEY"), "OPENAI_API_KEY não está configurada!"
+#assert os.getenv("OPENAI_API_KEY"), "OPENAI_API_KEY não está configurada!"
 assert os.getenv("GROQ_API_KEY"), "GROQ_API_KEY não está configurada!"
 assert os.getenv("SERPER_API_KEY"), "SERPER_API_KEY não está configurada!"
 
