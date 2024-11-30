@@ -27,6 +27,7 @@ llm = llama
 
 # Initialize the tool for internet searching capabilities
 serper_tool = SerperDevTool()
+serper_tool.n_results = 10
 
 # Configuração do agente
 

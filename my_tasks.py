@@ -21,8 +21,7 @@ recomendar = Task(
         Usar a ferramenta de busca e pesquisar apenas e somente no site {site}.
         Encontrar 3 presentes {tipo}  para {genero}, com preço abaixo de {preco}, pesquisar somente no Brasil.
         Listar os produtos encontrados.
-        Sua resposta deve incluir:
-        \n - Nome\n - Preço\n -\n Descrição. "
+        Sua resposta deve incluir: Nome, Preço e Descrição.
              """,
          expected_output=
              """
@@ -34,6 +33,6 @@ recomendar = Task(
              3) nome: descricao e valor
              """ , 
          agent=guia_compras,
-         #tools = [serper_tool],
+         tools = [serper_tool],
          output_file='lista_resultado.md'
          )
