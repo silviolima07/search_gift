@@ -9,9 +9,9 @@ from crewai import Crew, Process
 from my_agents import guia_compras
 from my_tasks import recomendar
 #from dotenv import load_dotenv
-from MyLLM import MyLLM
+#from MyLLM import MyLLM
 
-llm = MyLLM.GROQ_LLAMA
+#llm = MyLLM.GROQ_LLAMA
 
 # Carregar variáveis de ambiente
 #load_dotenv()
@@ -159,7 +159,7 @@ if option == 'Pesquisar':
     )
              
     
-    st.markdown("### LLM: "+ str(llm))
+    #st.markdown("### LLM: "+ str(llm))
   
 
     if st.button("INICIAR"):
