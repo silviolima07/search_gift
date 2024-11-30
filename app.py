@@ -171,7 +171,7 @@ if option == 'Pesquisar':
                 result = crew.kickoff(inputs=inputs)  # Faz a chamada ao crew.kickoff
                 
                 # Exibe a resposta no Streamlit
-                #st.markdown(f"### Resultado para {estado}")
+                st.markdown(f"### Presentes recomendados")
                 st.markdown(result)  # Função que processa e exibe a resposta
                 
             except Exception as e:
