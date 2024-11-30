@@ -11,7 +11,7 @@ from my_tasks import recomendar
 #from dotenv import load_dotenv
 from MyLLM import MyLLM
 
-llm = MyLLM.GROQ_LLAMA2
+llm = MyLLM.GROQ_LLAMA
 
 # Carregar variáveis de ambiente
 #load_dotenv()
