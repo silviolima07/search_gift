@@ -20,7 +20,7 @@ recomendar = Task(
         """
         Usar a ferramenta de busca e pesquisar apenas e somente no site {site}.
         Encontrar 3 presentes {tipo}  para {genero}, com preço abaixo de {preco}, pesquisar somente no Brasil.
-        Sua resposta deve incluir: Nome, Preço e Descrição.
+        Sua resposta deve incluir: \nNome, \nDescrição \nPreço.
         Salvar num arquivo formato Markdown.
              """,
          expected_output=
@@ -28,12 +28,12 @@ recomendar = Task(
              Um arquio em formato Markdown (md) com as 3 sugestões de  presentes.
              Salvar o arquivo gerado no seguinte padrao:
              Presentes recomendados:
-             1) nome: 
-                descricao:
-                valor:
-             
+             1) 
+             Nome: 
+             Descricao:
+             Preço:
              """ , 
          agent=guia_compras,
          #tools = [serper_tool],
-         output_file='lista_resultado.md'
+         output_file='LISTA_PRESENTES.md'
          )

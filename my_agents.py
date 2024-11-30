@@ -21,8 +21,9 @@ GROQ_API_KEY = os.getenv('GROQ_API_KEY')
 
 # Definir o modelo de linguagem
 
-llm = MyLLM.GROQ_LLAMA
+#llm = MyLLM.GROQ_MIXTRAL
 #llm = MyLLM.GPT4o_mini
+llm = MyLLM.GROQ_LLAMA
 
 
 
