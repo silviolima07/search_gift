@@ -8,7 +8,9 @@ from crewai import Crew, Process
 from my_agents import guia_compras
 from my_tasks import recomendar
 #from dotenv import load_dotenv
+from MyLLM import MyLLM
 
+llm = MyLLM.GROQ_LLAMA2
 
 # Carregar variáveis de ambiente
 #load_dotenv()
@@ -156,7 +158,7 @@ if option == 'Pesquisar':
     )
              
     
-    
+    st.markdown("### LLM: "+ str(llm))
   
 
     if st.button("INICIAR"):
@@ -175,7 +177,7 @@ if option == 'Pesquisar':
                 result = crew.kickoff(inputs=inputs)  # Faz a chamada ao crew.kickoff
                 
                 # Exibe a resposta no Streamlit
-                st.markdown(f"### Presentes recomendados")
+                #st.markdown(f"### Presentes recomendados")
                 st.markdown(result)  # Função que processa e exibe a resposta
                 
             except Exception as e:
