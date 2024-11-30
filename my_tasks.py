@@ -12,16 +12,17 @@ SERPER_API_KEY = os.getenv('SERPER_API_KEY')
 
 # Initialize the tool for internet searching capabilities
 serper_tool = SerperDevTool()
+serper_tool.n_results = 10
 
 
 recomendar = Task(
         description=
         """
-        Usar a ferramenta SerperTool e pesquisar apenas e somente no site {site},  3 presentes {tipo}  para {genero}, com preço abaixo de {preco}, pesquisar somente no Brasil (country) e na lingua Portuguesa (language).
-        Use a ferramenta SerperTool para buscar informações e listar os produtos encontrados.
+        Usar a ferramenta de busca e pesquisar apenas e somente no site {site}.
+        Encontrar 3 presentes {tipo}  para {genero}, com preço abaixo de {preco}, pesquisar somente no Brasil.
+        Listar os produtos encontrados.
         Sua resposta deve incluir:
         \n - Nome\n - Preço\n -\n Descrição. "
-        "Certifique-se de listar pelo menos 3 produtos."
              """,
          expected_output=
              """
