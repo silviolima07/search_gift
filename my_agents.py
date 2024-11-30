@@ -20,7 +20,7 @@ import os
 
 # Definir o modelo de linguagem
 
-llm = MyLLM.GROQ_LLAMA
+llm = MyLLM.GROQ_LLAMA2
 
 
 
