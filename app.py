@@ -14,13 +14,17 @@ from my_tasks import recomendar
 #llm = MyLLM.GROQ_LLAMA
 
 # Carregar variáveis de ambiente
-#load_dotenv()
+load_dotenv()
 import os
 
-# Obter a chave da API GROQ
-#GROQ_API_KEY = os.getenv('GROQ_API_KEY')
+os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
+os.environ["SERPER_API_KEY"] = os.getenv("SERPER_API_KEY")
 
-#OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+# Verifica se as chaves estão acessíveis
+assert os.getenv("OPENAI_API_KEY"), "OPENAI_API_KEY não está configurada!"
+assert os.getenv("GROQ_API_KEY"), "GROQ_API_KEY não está configurada!"
+assert os.getenv("SERPER_API_KEY"), "SERPER_API_KEY não está configurada!"
 
 from PIL import Image
 #import litellm  # Importando o LiteLLM para usar o Groq
