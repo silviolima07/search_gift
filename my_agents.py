@@ -15,9 +15,9 @@ load_dotenv()
 import os
 
 # Obter a chave da API GROQ
-#GROQ_API_KEY = os.getenv('GROQ_API_KEY')
+GROQ_API_KEY = os.getenv('GROQ_API_KEY')
 
-#OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
 # Definir o modelo de linguagem
 
