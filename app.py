@@ -8,7 +8,7 @@ import streamlit as st
 from crewai import Crew, Process
 from my_agents import guia_compras
 from my_tasks import recomendar
-#from dotenv import load_dotenv
+from dotenv import load_dotenv
 #from MyLLM import MyLLM
 
 #llm = MyLLM.GROQ_LLAMA
