@@ -15,7 +15,7 @@ from my_tasks import recomendar
 
 # Carregar variáveis de ambiente
 #load_dotenv()
-#import os
+import os
 
 # Obter a chave da API GROQ
 #GROQ_API_KEY = os.getenv('GROQ_API_KEY')
