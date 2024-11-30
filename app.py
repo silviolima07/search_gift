@@ -28,7 +28,19 @@ import warnings
 warnings.filterwarnings("ignore", category=UserWarning)
 warnings.filterwarnings("ignore", message="Overriding of current TracerProvider is not allowed")
 
+# Nome do arquivo gerado pela task
+output_file = "LISTA_PRESENTES.md"
 
+# Função para validar e ler o arquivo
+def validar_arquivo_markdown(file_path):
+    if os.path.exists(file_path):  # Verifica se o arquivo existe
+        print(f"✅ Arquivo gerado com sucesso: {file_path}")
+        with open(file_path, "r", encoding="utf-8") as f:
+            conteudo = f.read()
+            st.markdown("#### 📄 Conteúdo do arquivo:")
+           st.markdown(conteudo)
+    else:
+        print(f"❌ Erro: O arquivo {file_path} não foi gerado.")
 
 def selecionar_genero():
     genero = st.radio(
@@ -175,9 +187,19 @@ if option == 'Pesquisar':
                 # Executa o Crew, o que deve agora acionar os agentes e tasks
                 result = crew.kickoff(inputs=inputs)  # Faz a chamada ao crew.kickoff
                 
+                from crewai.utils import TokenCounter
+
+                token_counter = TokenCounter(agent=guia_compras)
+
+                # Verificar tokens antes e depois
+                print("Tokens usados na entrada:", token_counter.input_tokens)
+                print("Tokens usados na saída:", token_counter.output_tokens)
+  
                 # Exibe a resposta no Streamlit
                 #st.markdown(f"### Presentes recomendados")
-                st.markdown(result)  # Função que processa e exibe a resposta
+                #st.markdown(result)  # Função que processa e exibe a resposta
+                # Chamada da função para validar
+                validar_arquivo_markdown(output_file)
                 
             except Exception as e:
                 st.error(f"Error no crew.kickoff: {e}")
