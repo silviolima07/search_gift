@@ -2,7 +2,7 @@ crewai==0.83.0
 crewai-tools==0.14.0
 groq==0.13.0
 pandas==2.2.2
-pysqlite3-binary==3.35.0
+sqlite==3.35.0
 langchain-openai
 streamlit==1.40.2
 python-dotenv==1.0.1
