@@ -25,18 +25,13 @@ recomendar = Task(
              """,
          expected_output=
              """
-             Um arquio em formato Markdown (md) com as 3 sugestões de  presentes. Mostrar em Português do Brasil.
+             Um arquio em formato Markdown (md) com as 3 sugestões de  presentes.
              Salvar o arquivo gerado no seguinte padrao:
              Presentes recomendados:
              1) nome: 
                 descricao:
                 valor:
-             2) nome: 
-                descricao:
-                valor:
-             3) nome:
-                descricao:
-                valor
+             
              """ , 
          agent=guia_compras,
          #tools = [serper_tool],
