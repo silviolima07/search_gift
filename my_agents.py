@@ -5,7 +5,8 @@ import crewai_tools
 from crewai_tools import SerperDevTool
 
 from MyLLM import MyLLM
-#from config_llm import llama, gpt
+
+from config_model import selecionar_modelo
 
 from dotenv import load_dotenv
 # Carregar variáveis de ambiente
@@ -21,6 +22,9 @@ import os
 # Definir o modelo de linguagem
 
 llm = MyLLM.GROQ_LLAMA
+llm = MyLLM.GPT4o_mini
+
+llm = selecionar_modelo()
 
 
 
