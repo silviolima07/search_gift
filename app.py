@@ -143,7 +143,7 @@ if option == 'Pesquisar':
     
     # Certifique-se de que a Crew está configurada corretamente
     crew = Crew(
-        provider=OpenAIClient(api_key=OPENAI_API_KEY)
+        provider=OpenAIClient(api_key=OPENAI_API_KEY),
         agents=[guia_compras],
         tasks=[recomendar],
         process=Process.sequential,  # Processamento sequencial das tarefas
