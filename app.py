@@ -8,19 +8,19 @@ import streamlit as st
 from crewai import Crew, Process
 from my_agents import guia_compras
 from my_tasks import recomendar
-#from dotenv import load_dotenv
+from dotenv import load_dotenv
 #from MyLLM import MyLLM
 
 #llm = MyLLM.GROQ_LLAMA
 
 # Carregar variáveis de ambiente
-#load_dotenv()
+load_dotenv()
 #import os
 
 # Obter a chave da API GROQ
-#GROQ_API_KEY = os.getenv('GROQ_API_KEY')
+GROQ_API_KEY = os.getenv('GROQ_API_KEY')
 
-#OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
 from PIL import Image
 #import litellm  # Importando o LiteLLM para usar o Groq
