@@ -38,7 +38,7 @@ def validar_arquivo_markdown(file_path):
         with open(file_path, "r", encoding="utf-8") as f:
             conteudo = f.read()
             st.markdown("#### 📄 Conteúdo do arquivo:")
-           st.markdown(conteudo)
+            st.markdown(conteudo)
     else:
         print(f"❌ Erro: O arquivo {file_path} não foi gerado.")
 
