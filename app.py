@@ -1,5 +1,4 @@
 import pandas as pd
-import sqlite3
 import streamlit as st
 from crewai import Crew, Process
 from my_agents import guia_compras
