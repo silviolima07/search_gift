@@ -17,7 +17,7 @@ serper_tool = SerperDevTool()
 recomendar = Task(
         description=
         """
-        Usar a ferramenta de busca e pesquisar apenas e somente no site {site},  3 presentes {tipo}  para {genero}, com preço abaixo de {preco}.
+        Usar a ferramenta SerperTool e pesquisar apenas e somente no site {site},  3 presentes {tipo}  para {genero}, com preço abaixo de {preco}, pesquisar somente no Brasil (country) e na lingua Portuguesa (language).
         Use a ferramenta SerperTool para buscar informações e listar os produtos encontrados.
         Sua resposta deve incluir:
         \n - Nome\n - Preço\n -\n Descrição. "
