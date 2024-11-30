@@ -1,3 +1,4 @@
+# https://discuss.streamlit.io/t/the-sqlite3-version-3-34-1-on-streamlit-cloud-is-too-old-could-you-upgrade-it/48019
 import pysqlite3
 import sys 
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
