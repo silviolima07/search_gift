@@ -41,7 +41,7 @@ recomendar = Task(
         """
     ),
     agent=guia_compras,
-    output_file='presentes.txt',
+    output_file='presentes.csv',
     tools=[serper_tool],  # Ferramenta configurada
 )
 
