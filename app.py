@@ -185,7 +185,7 @@ if option == 'Pesquisar':
 
     # Inicialize a sessão de estado para armazenar o horário da última execução
     #if "ultimo_click" not in st.session_state:
-        st.session_state.ultimo_click = None  # Inicialmente, nenhum clique
+    #    st.session_state.ultimo_click = None  # Inicialmente, nenhum clique
 
     #if "result" not in st.session_state:
     #    st.session_state.result = None  # Para armazenar o resultado do crewai.kickoff
