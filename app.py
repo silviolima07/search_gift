@@ -169,10 +169,12 @@ if option == 'Pesquisar':
         #max_iterations=10,  # Aumente o número de iterações se necessário
         #time_limit_seconds=300  # Ajuste o limite de tempo (em segundos)
     )
-             
+    from crewai import LLM         
     st.write("LLM: ", llm.model)
     st.write("LLM: ", dir(llm.model))
-
+    teste = LLM(model=ll.model)
+    st.write("LLM: ", dir(teste))
+    
     if st.button("INICIAR"):
         inputs = {
             'site': url,
