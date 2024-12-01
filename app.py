@@ -187,14 +187,6 @@ if option == 'Pesquisar':
                 # Executa o Crew, o que deve agora acionar os agentes e tasks
                 result = crew.kickoff(inputs=inputs)  # Faz a chamada ao crew.kickoff
                 
-                from crewai.utils import TokenCounter
-
-                #token_counter = TokenCounter(agent=guia_compras)
-
-                # Verificar tokens antes e depois
-                st.write("Tokens usados na entrada:", token_counter.input_tokens)
-                st.write("Tokens usados na saída:", token_counter.output_tokens)
-  
                 # Exibe a resposta no Streamlit
                 #st.markdown(f"### Presentes recomendados")
                 #st.markdown(result)  # Função que processa e exibe a resposta
