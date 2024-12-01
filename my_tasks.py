@@ -31,9 +31,9 @@ recomendar = Task(
         expected_output = 
         """ Um dicionario com as informações de 3 presentes recomendados:
 {
-" presente ": <nome > ,
-" descricao": <descricao > ,
-"preco ": <preço >%
+"nome": <nome>,
+"descricao": <descricao>,
+"preco": <preço>
 } """,
         
          agent=guia_compras,
