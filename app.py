@@ -142,7 +142,7 @@ if option == 'Pesquisar':
     busca= "Site:"
     st.markdown("#### "+str(f'{url}'))
     
-    busca= f"Pesquisar 2 presentes {tipo}  para {genero}."     
+    busca= f"Pesquisar 1 presente {tipo}  para {genero}."     
     st.markdown("#### "+str(f'{busca}'))
     
     busca= f"Custo abaixo de R$ {preco}."     
