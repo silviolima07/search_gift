@@ -172,10 +172,9 @@ if option == 'Pesquisar':
     from crewai import LLM         
     st.write("LLM: ", llm.model)
     #st.write("LLM: ", dir(llm.model))
-    teste = LLM(model=llm.model)
+    #teste = LLM(model=llm.model)
     #st.write("Max tokens: ", dir(llm.max_tokens))
-    st.write("Max completion tokens: ", getattr(teste, 'max_tokens','limite nao especificado'))
-    
+    #st.write("Max completion tokens: ", getattr(teste, 'max_tokens','limite nao especificado'))
     #st.write("Atributes: ", dir(teste))
     
     if st.button("INICIAR"):
