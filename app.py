@@ -6,7 +6,7 @@ import sys
 import pandas as pd
 import streamlit as st
 from crewai import Crew, Process
-from my_agents import guia_compras
+from my_agents import guia_compras, llm
 from my_tasks import recomendar
 from dotenv import load_dotenv
 #from MyLLM import MyLLM
