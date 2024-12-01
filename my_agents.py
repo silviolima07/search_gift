@@ -21,8 +21,10 @@ OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
 # Definir o modelo de linguagem
 
-#llm = MyLLM.GROQ_MIXTRAL
-llm = MyLLM.GROQ_LLAMA
+llm = MyLLM.GROQ_MIXTRAL
+#llm = MyLLM.GROQ_LLAMA
+
+st.write(llm)
 
 
 
