@@ -37,12 +37,12 @@ recomendar = Task(
         """
         Use o SerperDevTool para pesquisar somente no site {site}. 
         Encontre 3 presentes {tipo} para {genero}, com valor abaixo de {preco}, disponíveis no Brasil. 
-        Retorne o resultado com Nome do presente, Descrição da presente e Preço do presente em formato de dicionário.
+        Retorne o resultado com Nome do presente, Descrição da presente e Preço do presente em formato de txt.
         """
     ),
     expected_output=(
         """
-        Um JSON válido contendo as informações de 3 presentes recomendados:
+        Informações de 3 presentes recomendados:
         {
             "Nome": ["<nome1>", "<nome2>", "<nome3>"],
             "Descricao": ["<descricao1>", "<descricao2>", "<descricao3>"],
@@ -51,7 +51,7 @@ recomendar = Task(
         """
     ),
     agent=guia_compras,
-    output_file='presentes.json',
+    output_file='presentes.txt',
     tools=[serper_tool],  # Ferramenta configurada
 )
 
