@@ -42,6 +42,14 @@ def validar_arquivo_markdown(file_path):
     else:
         print(f"❌ Erro: O arquivo {file_path} não foi gerado.")
 
+
+df validar_arquiv_csv(file_csv):
+    if os.path.exists(file_csv):
+        return pd.read_csv(file_csv)
+    else:
+        raise FileNotFoundError("O arquivo CSV não foi gerado pela Task.")
+
+
 def selecionar_genero():
     genero = st.radio(
     "Escolha:",
@@ -263,8 +271,10 @@ if option == 'Pesquisar':
             try:
                 # Executa o Crew, o que deve agora acionar os agentes e tasks
                 result = crew.kickoff(inputs=inputs)  # Faz a chamada ao crew.kickoff
-                #df = pd.read_csv(result.raw)
-                st.table(result.raw)
+                
+                arquivo - validar_arquivo_csv('presentes.csv')
+                df = pd.read_csv(arquivo)
+                st.table(df)
                 st.write(result.token_usage)
                 
                 
