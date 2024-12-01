@@ -40,16 +40,6 @@ recomendar = Task(
         Retorne o resultado com Nome do presente, Descrição da presente e Preço do presente em formato de txt.
         """
     ),
-    expected_output=(
-        """
-        Informações de 3 presentes recomendados:
-        {
-            "Nome": ["<nome1>", "<nome2>", "<nome3>"],
-            "Descricao": ["<descricao1>", "<descricao2>", "<descricao3>"],
-            "Preco": ["<preco1>", "<preco2>", "<preco3>"]
-        }
-        """
-    ),
     agent=guia_compras,
     output_file='presentes.txt',
     tools=[serper_tool],  # Ferramenta configurada
