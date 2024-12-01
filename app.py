@@ -176,11 +176,48 @@ if option == 'Pesquisar':
     #st.write("Max tokens: ", dir(llm.max_tokens))
     #st.write("Max completion tokens: ", getattr(teste, 'max_tokens','limite nao especificado'))
     #st.write("Atributes: ", dir(teste))
-    global flag = True
 
-    if flag == False:
-        st.write('Aguarde 30 segundos')
-        time.sleep(30)
+    ##################################
+    import time
+    from datetime import datetime, timedelta
+
+    # Inicialize a sessão de estado para armazenar o horário da última execução
+    if "ultimo_click" not in st.session_state:
+    st.session_state.ultimo_click = None  # Inicialmente, nenhum clique
+
+    if "result" not in st.session_state:
+    st.session_state.result = None  # Para armazenar o resultado do crewai.kickoff
+
+    # Função que simula o processamento do CrewAI
+    def executar_kickoff():
+    # Simula a chamada do CrewAI
+    time.sleep(5)  # Simula tempo de processamento
+    return "Resultado gerado com sucesso!"
+
+    # Verifica se já passou 1 minuto desde o último clique
+    habilitar_botao = (
+    st.session_state.ultimo_click is None
+    or datetime.now() - st.session_state.ultimo_click >= timedelta(minutes=1)
+    )
+
+    # Botão para iniciar a execução
+    if st.button("Iniciar", disabled=not habilitar_botao):
+        st.session_state.ultimo_click = datetime.now()  # Armazena o horário do clique
+        st.session_state.result = executar_kickoff()  # Executa o kickoff
+
+    # Exibir o resultado, se disponível
+    if st.session_state.result:
+        st.success(st.session_state.result)
+
+    # Mensagem para o usuário se o botão estiver desabilitado
+    if not habilitar_botao:
+        tempo_restante = timedelta(minutes=1) - (datetime.now() - st.session_state.ultimo_click)
+        segundos_restantes = int(tempo_restante.total_seconds())
+        st.warning(f"O botão será habilitado novamente em {segundos_restantes} segundos.")
+
+
+    ##################################
+   
     if st.button("INICIAR") and flag:
         inputs = {
             'site': url,
