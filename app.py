@@ -212,7 +212,7 @@ if option == 'Pesquisar':
         st.success(st.session_state.result)
 
     # Mensagem para o usuário se o botão estiver desabilitado
-    while not habilitar_botao:
+    if not habilitar_botao:
         tempo_restante = timedelta(minutes=1) - (datetime.now() - st.session_state.ultimo_click)
         segundos_restantes = int(tempo_restante.total_seconds())
         st.warning(f"O botão será habilitado novamente em {segundos_restantes} segundos.")
