@@ -24,7 +24,7 @@ OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 llm = MyLLM.GROQ_MIXTRAL
 #llm = MyLLM.GROQ_LLAMA
 
-st.write(llm)
+st.write(llm.model)
 
 
 
