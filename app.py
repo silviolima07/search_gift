@@ -254,8 +254,8 @@ if option == 'Pesquisar':
             'site': url,
             'genero':genero,
             'preco':preco,
-            'tipo':tipo,
-            'search_query': f"Usar a ferramenta de busca e pesquisar na url {'site'} presentes para menino de 5 anos"
+            'tipo':tipo
+            #'search_query': f"Usar a ferramenta de busca e pesquisar na url {'site'} presentes para menino de 5 anos"
         }
         #st.markdown("### '+f"Usar a ferramenta de busca e pesquisar no site {site},  3 presentes {tipo}  para {genero}.")
         
