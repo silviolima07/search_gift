@@ -43,7 +43,7 @@ def validar_arquivo_markdown(file_path):
         print(f"❌ Erro: O arquivo {file_path} não foi gerado.")
 
 
-df validar_arquiv_csv(file_csv):
+def validar_arquiv_csv(file_csv):
     if os.path.exists(file_csv):
         return pd.read_csv(file_csv)
     else:
