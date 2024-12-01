@@ -176,7 +176,7 @@ if option == 'Pesquisar':
     #st.write("Max tokens: ", dir(llm.max_tokens))
     st.write("Max completion tokens: ", getattr(teste, 'max_tokens','limite nao especificado'))
     
-    st.write("Atributes: ", dir(teste))
+    #st.write("Atributes: ", dir(teste))
     
     if st.button("INICIAR"):
         inputs = {
