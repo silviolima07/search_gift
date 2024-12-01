@@ -216,6 +216,7 @@ if option == 'Pesquisar':
         tempo_restante = timedelta(minutes=1) - (datetime.now() - st.session_state.ultimo_click)
         segundos_restantes = int(tempo_restante.total_seconds())
         st.warning(f"O botão será habilitado novamente em {segundos_restantes} segundos.")
+        st.experimental_rerun() 
         
     ##################################
     """
