@@ -42,15 +42,12 @@ recomendar = Task(
     ),
     expected_output=(
         """
-        Um arquivo CSV com as informações de 3 presentes recomendados.
-        {
-        'Nome': [<nome1>, <nome2>, <nome3>],
-        'Descricao': [<descricao1>, <descricao2>, <descricao3>],
-        'Preço': [<preco1>, <preco2>, <preco3>],
-        }
+        Um arquivo CSV contendo as informações de 3 presentes recomendados com as colunas:
+        Nome, Descrição e Preço.
         """ ),
     agent=guia_compras,
     tools=[serper_tool],  # Ferramenta configurada
+    output_file="presentes.csv"  # Salvar diretamente como CSV
 )
 
 
