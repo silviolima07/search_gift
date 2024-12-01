@@ -37,7 +37,7 @@ recomendar = Task(
         """
         Use a ferramenta de busca para pesquisar somente no site {site}. 
         Encontre 3 presentes {tipo} para {genero}, com valor abaixo de {preco}, disponíveis no Brasil. 
-        Retorne o resultado com Nome, Descrição e Preço em formato de dicionário.
+        Retorne o resultado com Nome do presente, Descrição da presente e Preço do presente em formato de dicionário.
         """
     ),
     expected_output=(
@@ -46,7 +46,7 @@ recomendar = Task(
         {
         'Nome': [<nome1>, <nome2>, <nome3>],
         'Descricao': [<descricao1>, <descricao2>, <descricao3>],
-        'Preço': [<preco1>, <preco2>, <preco3>]
+        'Preço': [<preco1>, <preco2>, <preco3>],
         }
         """
     ),
