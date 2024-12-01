@@ -176,8 +176,12 @@ if option == 'Pesquisar':
     #st.write("Max tokens: ", dir(llm.max_tokens))
     #st.write("Max completion tokens: ", getattr(teste, 'max_tokens','limite nao especificado'))
     #st.write("Atributes: ", dir(teste))
-    
-    if st.button("INICIAR"):
+    flag = True
+
+    if flag == False:
+        st.write('Aguarde 30 segundos")
+        time.sleep(30)
+    if st.button("INICIAR") and flag:
         inputs = {
             'site': url,
             'genero':genero,
@@ -191,6 +195,7 @@ if option == 'Pesquisar':
             try:
                 # Executa o Crew, o que deve agora acionar os agentes e tasks
                 result = crew.kickoff(inputs=inputs)  # Faz a chamada ao crew.kickoff
+                flag = False
                 
                 # Exibe a resposta no Streamlit
                 #st.markdown(f"### Presentes recomendados")
