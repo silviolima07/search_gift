@@ -263,16 +263,17 @@ if option == 'Pesquisar':
             try:
                 # Executa o Crew, o que deve agora acionar os agentes e tasks
                 result = crew.kickoff(inputs=inputs)  # Faz a chamada ao crew.kickoff
-                st.table(result)
+                st.table(result.raw)
+                st.write(result.token_usage)
                 
                 
                 # Exibe a resposta no Streamlit
                 #st.markdown(f"### Presentes recomendados")
                 #st.markdown(result)  # Função que processa e exibe a resposta
                 # Chamada da função para validar
-                validar_arquivo_markdown(output_file)
-                time.sleep(60)
-                st.write("Espere 60 segundos antes de executar novamente")
+                #validar_arquivo_markdown(output_file)
+                #time.sleep(60)
+                #st.write("Espere 60 segundos antes de executar novamente")
                 
             except Exception as e:
                 st.error(f"Error no crew.kickoff: {e}")
