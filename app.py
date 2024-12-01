@@ -171,6 +171,7 @@ if option == 'Pesquisar':
     )
              
     st.write("LLM: ", llm.model)
+    st.write("LLM: ", dir(llm.model))
 
     if st.button("INICIAR"):
         inputs = {
