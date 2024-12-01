@@ -10,7 +10,7 @@ from my_agents import guia_compras, llm
 from my_tasks import recomendar
 from dotenv import load_dotenv
 #from MyLLM import MyLLM
-
+import time
 #llm = MyLLM.GROQ_LLAMA
 
 # Carregar variáveis de ambiente
