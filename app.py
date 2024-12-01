@@ -218,7 +218,7 @@ if option == 'Pesquisar':
 
 
     ##################################
-   """
+    """
     if st.button("INICIAR"):
         inputs = {
             'site': url,
@@ -243,7 +243,7 @@ if option == 'Pesquisar':
                 
             except Exception as e:
                 st.error(f"Error no crew.kickoff: {e}")
-         """       
+    """       
 if option == 'About':
     st.markdown("### Sugestão de presentes educativos, interessantes e uteís.")
     st.markdown("### Este aplicativo faz uma busca e sugere 3 presentes de acordo com os critéros definidos.")
