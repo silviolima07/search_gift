@@ -218,8 +218,8 @@ if option == 'Pesquisar':
     if st.session_state.resultado:
         st.success(st.session_state.resultado)
 
-   # Mensagem de tempo restante
-   if not habilitar_botao:
+    # Mensagem de tempo restante
+    if not habilitar_botao:
         st.warning(f"O botão será habilitado novamente em {int(tempo_restante)} segundos.")
         # Aguarda o tempo restante e força o rerender
         time.sleep(tempo_restante)
