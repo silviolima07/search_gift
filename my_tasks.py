@@ -37,9 +37,18 @@ recomendar = Task(
         """
         Use o SerperDevTool para pesquisar somente no site {site}. 
         Encontre 3 presentes {tipo} para {genero}, com valor abaixo de {preco}, disponíveis no Brasil. 
-        Retorne o resultado com Nome do presente, Descrição da presente e Preço do presente em formato de dicionario.
+        Retorne o resultado com Nome , Descrição  e Preço do presente em formato de dicionario.
         """
     ),
+    expected_output=(
+        """
+        Um dicionário com as informações de 3 presentes recomendados.
+        {
+        'Nome': [<nome1>, <nome2>, <nome3>],
+        'Descricao': [<descricao1>, <descricao2>, <descricao3>],
+        'Preço': [<preco1>, <preco2>, <preco3>],
+        }
+        """
     agent=guia_compras,
     tools=[serper_tool],  # Ferramenta configurada
 )
