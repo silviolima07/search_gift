@@ -173,6 +173,7 @@ if option == 'Pesquisar':
     st.write("LLM: ", llm.model)
     st.write("LLM: ", dir(llm.model))
     teste = LLM(model=ll.model)
+    teste = LLM(model="groq/mixtral-8x7b-32768")
     st.write("LLM: ", dir(teste))
     
     if st.button("INICIAR"):
