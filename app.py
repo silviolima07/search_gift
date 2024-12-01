@@ -179,52 +179,52 @@ if option == 'Pesquisar':
     #st.write("Atributes: ", dir(teste))
 
     ##################################
-    """
-    import time
-    from datetime import datetime, timedelta
+    
+    #import time
+    #from datetime import datetime, timedelta
 
     # Inicialize a sessão de estado para armazenar o horário da última execução
-    if "ultimo_click" not in st.session_state:
+    #if "ultimo_click" not in st.session_state:
         st.session_state.ultimo_click = None  # Inicialmente, nenhum clique
 
-    if "result" not in st.session_state:
-        st.session_state.result = None  # Para armazenar o resultado do crewai.kickoff
+    #if "result" not in st.session_state:
+    #    st.session_state.result = None  # Para armazenar o resultado do crewai.kickoff
 
     # Configurar o tempo de espera em segundos
-    TEMPO_ESPERA = 60
+    #TEMPO_ESPERA = 60
     
     # Função que simula o processamento do CrewAI
-    def executar_kickoff():
-        # Simula a chamada do CrewAI
-        #time.sleep(5)  # Simula tempo de processamento
-        result = crew.kickoff(inputs=inputs)
+    #def executar_kickoff():
+    #    # Simula a chamada do CrewAI
+    #    #time.sleep(5)  # Simula tempo de processamento
+    #    result = crew.kickoff(inputs=inputs)
         # Exibe a resposta no Streamlit
-        validar_arquivo_markdown(output_file)
+    #    validar_arquivo_markdown(output_file)
 
     # Verificar se o botão deve estar habilitado
-    tempo_restante = 0
-    if st.session_state.ultimo_click:
-        tempo_restante = TEMPO_ESPERA - (datetime.now() - st.session_state.ultimo_click).total_seconds()
+    #tempo_restante = 0
+    #if st.session_state.ultimo_click:
+    #    tempo_restante = TEMPO_ESPERA - (datetime.now() - st.session_state.ultimo_click).total_seconds()
 
-    habilitar_botao = tempo_restante <= 0
+    #habilitar_botao = tempo_restante <= 0
 
     # Botão de iniciar
-    if st.button("Iniciar", disabled=not habilitar_botao):
+    #if st.button("Iniciar", disabled=not habilitar_botao):
         # Salva o momento do clique
-        st.session_state.ultimo_click = datetime.now()
+    #    st.session_state.ultimo_click = datetime.now()
         # Executa o modelo e salva o resultado
-        st.session_state.result = executar_kickoff()
+    #    st.session_state.result = executar_kickoff()
 
     # Exibe o resultado do modelo, se disponível
-    if st.session_state.result:
-        st.success(st.session_state.result)
+    #if st.session_state.result:
+    #    st.success(st.session_state.result)
 
     # Mensagem de tempo restante
-    if not habilitar_botao:
-        st.warning(f"O botão será habilitado novamente em {int(tempo_restante)} segundos.")
+    #if not habilitar_botao:
+    #    st.warning(f"O botão será habilitado novamente em {int(tempo_restante)} segundos.")
         # Aguarda o tempo restante e força o rerender
-        time.sleep(tempo_restante)
-        st.experimental_rerun()  # Recarrega a interface para habilitar o botão
+    #    time.sleep(tempo_restante)
+    #    st.experimental_rerun()  # Recarrega a interface para habilitar o botão
     """
     # Verifica se já passou 1 minuto desde o último clique
     #habilitar_botao = (
@@ -232,21 +232,21 @@ if option == 'Pesquisar':
     #)
     """
     # Botão para iniciar a execução
-    if st.button("Iniciar", disabled=not habilitar_botao):
-        st.session_state.ultimo_click = datetime.now()  # Armazena o horário do clique
-        st.session_state.result = executar_kickoff()  # Executa o kickoff
+    #if st.button("Iniciar", disabled=not habilitar_botao):
+    #    st.session_state.ultimo_click = datetime.now()  # Armazena o horário do clique
+    #    st.session_state.result = executar_kickoff()  # Executa o kickoff
 
     # Exibir o resultado, se disponível
-    if st.session_state.result:
-        st.success(st.session_state.result)
+    #if st.session_state.result:
+    #    st.success(st.session_state.result)
 
     # Mensagem para o usuário se o botão estiver desabilitado
-    if not habilitar_botao:
-        tempo_restante = timedelta(minutes=1) - (datetime.now() - st.session_state.ultimo_click)
-        segundos_restantes = int(tempo_restante.total_seconds())
-        st.warning(f"O botão será habilitado novamente em {segundos_restantes} segundos.")
-        st.experimental_rerun() 
-     """   
+    #if not habilitar_botao:
+    #    tempo_restante = timedelta(minutes=1) - (datetime.now() - st.session_state.ultimo_click)
+    #    segundos_restantes = int(tempo_restante.total_seconds())
+    #    st.warning(f"O botão será habilitado novamente em {segundos_restantes} segundos.")
+    #    st.experimental_rerun() 
+       
     ##################################
     
     if st.button("INICIAR"):
