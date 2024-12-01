@@ -38,14 +38,15 @@ recomendar = Task(
         "Encontre 3 presentes {tipo} para {genero}, com valor abaixo de {preco}, disponíveis no Brasil. "
         "Retorne o resultado com Nome, Descrição e Preço em formato de dicionário.
     ),
-    expected_output=(
-        "Um dicionário com as informações de 3 presentes recomendados. Exemplo:\n"
-        "{\n"
-        "  'Nome': [<nome1>, <nome2>, <nome3>],\n"
-        "  'Descricao': [<descricao1>, <descricao2>, <descricao3>],\n"
-        "  'Preço': [<preco1>, <preco2>, <preco3>]\n"
-        "}"
-    ),
+    expected_output=
+         """
+        Um dicionário com as informações de 3 presentes recomendados.
+        {
+        'Nome': [<nome1>, <nome2>, <nome3>],
+        'Descricao': [<descricao1>, <descricao2>, <descricao3>],
+        'Preço': [<preco1>, <preco2>, <preco3>]
+        }
+        """,
     agent=guia_compras,
     output_file = 'presentes.csv',    
     tools=[serper_tool],  # Ferramenta configurada
