@@ -179,6 +179,7 @@ if option == 'Pesquisar':
     #st.write("Atributes: ", dir(teste))
 
     ##################################
+    """
     import time
     from datetime import datetime, timedelta
 
@@ -227,9 +228,9 @@ if option == 'Pesquisar':
     """
     # Verifica se já passou 1 minuto desde o último clique
     #habilitar_botao = (
-    st.session_state.ultimo_click is None or datetime.now() - st.session_state.ultimo_click >= timedelta(minutes=1)
-    )
-
+    #st.session_state.ultimo_click is None or datetime.now() - st.session_state.ultimo_click >= timedelta(minutes=1)
+    #)
+    """
     # Botão para iniciar a execução
     if st.button("Iniciar", disabled=not habilitar_botao):
         st.session_state.ultimo_click = datetime.now()  # Armazena o horário do clique
@@ -247,7 +248,7 @@ if option == 'Pesquisar':
         st.experimental_rerun() 
      """   
     ##################################
-    """
+    
     if st.button("INICIAR"):
         inputs = {
             'site': url,
@@ -272,7 +273,7 @@ if option == 'Pesquisar':
                 
             except Exception as e:
                 st.error(f"Error no crew.kickoff: {e}")
-    """       
+           
 if option == 'About':
     st.markdown("### Sugestão de presentes educativos, interessantes e uteís.")
     st.markdown("### Este aplicativo faz uma busca e sugere 3 presentes de acordo com os critéros definidos.")
