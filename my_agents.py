@@ -40,7 +40,7 @@ guia_compras = Agent(
             "Você é responsável por orientar na melhor compra."   
         ,
         llm=llm, # estava provider=provider
-        verbose=False,
+        verbose=True,
         memory=False,
         tools=[serper_tool]
     )
