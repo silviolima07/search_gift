@@ -248,8 +248,8 @@ if option == 'Pesquisar':
     #    st.experimental_rerun() 
        
     ##################################
-    
-    if st.button("INICIAR"):
+    flag = True
+    if st.button("INICIAR") and flag:
         inputs = {
             'site': url,
             'genero':genero,
@@ -270,6 +270,7 @@ if option == 'Pesquisar':
                 #st.markdown(result)  # Função que processa e exibe a resposta
                 # Chamada da função para validar
                 validar_arquivo_markdown(output_file)
+                flag = False
                 
             except Exception as e:
                 st.error(f"Error no crew.kickoff: {e}")
