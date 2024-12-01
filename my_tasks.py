@@ -37,7 +37,8 @@ recomendar = Task(
         """
         Use o SerperDevTool para pesquisar somente no site {site}. 
         Encontre e recomende 1 presente {tipo} para {genero}, com valor abaixo de {preco}, disponíveis no Brasil. 
-        Retorne o resultado um arquivvo CSV com as colunas:Nome , Descrição  e Preço dos presentes.
+        Retorne o resultado em um arquivo CSV com as colunas:Nome , Descrição  e Preço dos presentes.
+        Apresenta na saída o resultado.
         """
     ),
     expected_output=(
