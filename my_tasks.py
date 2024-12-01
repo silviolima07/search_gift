@@ -36,12 +36,7 @@ recomendar = Task(
     description=(
         "Use a ferramenta de busca para pesquisar somente no site {site}. "
         "Encontre 3 presentes {tipo} para {genero}, com valor abaixo de {preco}, disponíveis no Brasil. "
-        "Retorne o resultado com Nome, Descrição e Preço em formato de dicionário. Exemplo de resposta:\n"
-        "{\n"
-        "  'Nome': <nome>,\n"
-        "  'Descricao': <descricao>,\n"
-        "  'Preço': <preço>\n"
-        "}"
+        "Retorne o resultado com Nome, Descrição e Preço em formato de dicionário.
     ),
     expected_output=(
         "Um dicionário com as informações de 3 presentes recomendados. Exemplo:\n"
