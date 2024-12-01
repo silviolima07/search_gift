@@ -34,12 +34,14 @@ serper_tool.n_results = 10
 # Configuração da Task
 recomendar = Task(
     description=(
-        "Use a ferramenta de busca para pesquisar somente no site {site}. "
-        "Encontre 3 presentes {tipo} para {genero}, com valor abaixo de {preco}, disponíveis no Brasil. "
-        "Retorne o resultado com Nome, Descrição e Preço em formato de dicionário.
+        """
+        Use a ferramenta de busca para pesquisar somente no site {site}. 
+        Encontre 3 presentes {tipo} para {genero}, com valor abaixo de {preco}, disponíveis no Brasil. 
+        Retorne o resultado com Nome, Descrição e Preço em formato de dicionário.
+        """
     ),
     expected_output=(
-         """
+        """
         Um dicionário com as informações de 3 presentes recomendados.
         {
         'Nome': [<nome1>, <nome2>, <nome3>],
@@ -49,7 +51,7 @@ recomendar = Task(
         """
     ),
     agent=guia_compras,
-    output_file = 'presentes.csv',    
+    output_file='presentes.csv',
     tools=[serper_tool],  # Ferramenta configurada
 )
 
