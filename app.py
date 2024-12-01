@@ -196,11 +196,6 @@ if option == 'Pesquisar':
         result = crew.kickoff(inputs=inputs)
         # Exibe a resposta no Streamlit
         validar_arquivo_markdown(output_file)
-        
-        tempo_restante = timedelta(minutes=1) - (datetime.now() - st.session_state.ultimo_click)
-        segundos_restantes = int(tempo_restante.total_seconds())
-        st.warning(f"O botão Iniciar será habilitado novamente em {segundos_restantes} segundos.")
-        return "Resultado gerado com sucesso!"
 
     # Verifica se já passou 1 minuto desde o último clique
     habilitar_botao = (
