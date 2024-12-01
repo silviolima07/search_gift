@@ -37,7 +37,7 @@ recomendar = Task(
         """
         Use o SerperDevTool para pesquisar somente no site {site}. 
         Encontre 3 presentes {tipo} para {genero}, com valor abaixo de {preco}, disponíveis no Brasil. 
-        Retorne o resultado com Nome do presente, Descrição da presente e Preço do presente em formato de txt.
+        Retorne o resultado com Nome do presente, Descrição da presente e Preço do presente em formato de dicionario.
         """
     ),
     agent=guia_compras,
