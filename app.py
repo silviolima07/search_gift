@@ -272,9 +272,9 @@ if option == 'Pesquisar':
                 # Executa o Crew, o que deve agora acionar os agentes e tasks
                 result = crew.kickoff(inputs=inputs)  # Faz a chamada ao crew.kickoff
                 
-                arquivo = validar_arquivo_csv('presentes.csv')
-                df = pd.read_csv(arquivo)
-                st.table(df)
+                #arquivo = validar_arquivo_csv('presentes.csv')
+                #df = pd.read_csv(arquivo)
+                #st.table(df)
                 st.write(result.token_usage)
                 
                 
