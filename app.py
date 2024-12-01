@@ -195,10 +195,10 @@ if option == 'Pesquisar':
     # Função que simula o processamento do CrewAI
     def executar_kickoff():
         # Simula a chamada do CrewAI
-        time.sleep(5)  # Simula tempo de processamento
-        #result = crew.kickoff(inputs=inputs)
+        #time.sleep(5)  # Simula tempo de processamento
+        result = crew.kickoff(inputs=inputs)
         # Exibe a resposta no Streamlit
-        #validar_arquivo_markdown(output_file)
+        validar_arquivo_markdown(output_file)
 
     # Verificar se o botão deve estar habilitado
     tempo_restante = 0
@@ -212,7 +212,7 @@ if option == 'Pesquisar':
         # Salva o momento do clique
         st.session_state.ultimo_click = datetime.now()
         # Executa o modelo e salva o resultado
-        st.session_state.result = executar_modelo()
+        st.session_state.result = executar_kickoff()
 
     # Exibe o resultado do modelo, se disponível
     if st.session_state.result:
