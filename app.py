@@ -192,6 +192,7 @@ if option == 'Pesquisar':
     def executar_kickoff():
         # Simula a chamada do CrewAI
         time.sleep(5)  # Simula tempo de processamento
+        result = crew.kickoff(inputs=inputs)
         return "Resultado gerado com sucesso!"
 
     # Verifica se já passou 1 minuto desde o último clique
@@ -217,7 +218,7 @@ if option == 'Pesquisar':
 
     ##################################
    
-    if st.button("INICIAR") and flag:
+    if st.button("INICIAR"):
         inputs = {
             'site': url,
             'genero':genero,
@@ -231,7 +232,7 @@ if option == 'Pesquisar':
             try:
                 # Executa o Crew, o que deve agora acionar os agentes e tasks
                 result = crew.kickoff(inputs=inputs)  # Faz a chamada ao crew.kickoff
-                flag = False
+                
                 
                 # Exibe a resposta no Streamlit
                 #st.markdown(f"### Presentes recomendados")
