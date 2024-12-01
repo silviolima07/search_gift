@@ -170,7 +170,7 @@ if option == 'Pesquisar':
         #time_limit_seconds=300  # Ajuste o limite de tempo (em segundos)
     )
              
-  
+    st.write("LLM: ", llm.model)
 
     if st.button("INICIAR"):
         inputs = {
