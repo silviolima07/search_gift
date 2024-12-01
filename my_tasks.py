@@ -23,11 +23,18 @@ recomendar = Task(
     "Presentes recomendados:\n"
     "1)Nome:\nDescricao:\nPreço:\n"
              ),
-         expected_output=(
-    "Um arquivo Markdown (md) com 1 presente recomendado2, seguir o exemplo:"
-    "### Presentes recomendados:\n"
-    "#### 1) Nome:\n  #### Descricao:\n  #### Preço:\n"
-            ), 
+         #expected_output=(
+    #"Um arquivo Markdown (md) com 1 presente recomendado2, seguir o exemplo:"
+    #"### Presentes recomendados:\n"
+    #"#### 1) Nome:\n  #### Descricao:\n  #### Preço:\n"
+    #        ), 
+        expected_output = """ Um dicionario com as informações de 3 presentes recomendados:
+{
+" presente ": <nome > ,
+" descricao": <descricao > ,
+"preco ": <preço >%
+} "
+        
          agent=guia_compras,
          #tools = [serper_tool],
          output_file='LISTA_PRESENTES.md'
