@@ -18,7 +18,7 @@ serper_tool.n_results = 10
 recomendar = Task(
         description=(
     "Use a ferramenta de busca para pesquisar somente no site {site}. "
-    "Encontre 1 presente {tipo} para {genero}, com valor abaixo de {preco}, disponíveis no Brasil. "
+    "Encontre 3 presentes {tipo} para {genero}, com valor abaixo de {preco}, disponíveis no Brasil. "
     "Retorne o resultado com Nome, Descrição e Preço. Apenas salve a resposta em Portugues, um arquivo formato Markdown (md)."
     "Presentes recomendados:\n"
     "1)Nome:\nDescricao:\nPreço:\n"
