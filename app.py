@@ -210,6 +210,8 @@ if option == 'Pesquisar':
     # Exibir o resultado, se disponível
     if st.session_state.result:
         st.success(st.session_state.result)
+    else:
+        st.write(st.session_state.result)
 
     # Mensagem para o usuário se o botão estiver desabilitado
     if not habilitar_botao:
