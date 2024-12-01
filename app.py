@@ -225,12 +225,12 @@ if option == 'Pesquisar':
         # Aguarda o tempo restante e força o rerender
     #    time.sleep(tempo_restante)
     #    st.experimental_rerun()  # Recarrega a interface para habilitar o botão
-    """
+    
     # Verifica se já passou 1 minuto desde o último clique
     #habilitar_botao = (
     #st.session_state.ultimo_click is None or datetime.now() - st.session_state.ultimo_click >= timedelta(minutes=1)
     #)
-    """
+    
     # Botão para iniciar a execução
     #if st.button("Iniciar", disabled=not habilitar_botao):
     #    st.session_state.ultimo_click = datetime.now()  # Armazena o horário do clique
