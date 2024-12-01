@@ -24,10 +24,7 @@ OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 llm = MyLLM.GROQ_MIXTRAL
 #llm = MyLLM.GROQ_LLAMA
 
-st.write("LLM: ", llm.model)
-
-
-
+#st.write("LLM: ", llm.model)
 
 # Initialize the tool for internet searching capabilities
 serper_tool = SerperDevTool()
