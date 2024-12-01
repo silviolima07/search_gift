@@ -35,7 +35,7 @@ serper_tool.n_results = 10
 recomendar = Task(
     description=(
         """
-        Use a ferramenta de busca para pesquisar somente no site {site}. 
+        Use o SerperDevTool para pesquisar somente no site {site}. 
         Encontre 3 presentes {tipo} para {genero}, com valor abaixo de {preco}, disponíveis no Brasil. 
         Retorne o resultado com Nome do presente, Descrição da presente e Preço do presente em formato de dicionário.
         """
