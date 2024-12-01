@@ -183,21 +183,20 @@ if option == 'Pesquisar':
 
     # Inicialize a sessão de estado para armazenar o horário da última execução
     if "ultimo_click" not in st.session_state:
-    st.session_state.ultimo_click = None  # Inicialmente, nenhum clique
+        st.session_state.ultimo_click = None  # Inicialmente, nenhum clique
 
     if "result" not in st.session_state:
-    st.session_state.result = None  # Para armazenar o resultado do crewai.kickoff
+        st.session_state.result = None  # Para armazenar o resultado do crewai.kickoff
 
     # Função que simula o processamento do CrewAI
     def executar_kickoff():
-    # Simula a chamada do CrewAI
-    time.sleep(5)  # Simula tempo de processamento
-    return "Resultado gerado com sucesso!"
+        # Simula a chamada do CrewAI
+        time.sleep(5)  # Simula tempo de processamento
+        return "Resultado gerado com sucesso!"
 
     # Verifica se já passou 1 minuto desde o último clique
     habilitar_botao = (
-    st.session_state.ultimo_click is None
-    or datetime.now() - st.session_state.ultimo_click >= timedelta(minutes=1)
+    st.session_state.ultimo_click is None or datetime.now() - st.session_state.ultimo_click >= timedelta(minutes=1)
     )
 
     # Botão para iniciar a execução
