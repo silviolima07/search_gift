@@ -189,6 +189,9 @@ if option == 'Pesquisar':
     if "result" not in st.session_state:
         st.session_state.result = None  # Para armazenar o resultado do crewai.kickoff
 
+    # Configurar o tempo de espera em segundos
+    TEMPO_ESPERA = 60
+    
     # Função que simula o processamento do CrewAI
     def executar_kickoff():
         # Simula a chamada do CrewAI
@@ -197,8 +200,33 @@ if option == 'Pesquisar':
         # Exibe a resposta no Streamlit
         validar_arquivo_markdown(output_file)
 
+    # Verificar se o botão deve estar habilitado
+    tempo_restante = 0
+    if st.session_state.ultimo_click:
+        tempo_restante = TEMPO_ESPERA - (datetime.now() - st.session_state.ultimo_click).total_seconds()
+
+    habilitar_botao = tempo_restante <= 0
+
+    # Botão de iniciar
+    if st.button("Iniciar", disabled=not habilitar_botao):
+        # Salva o momento do clique
+        st.session_state.ultimo_click = datetime.now()
+        # Executa o modelo e salva o resultado
+        st.session_state.resultado = executar_modelo()
+
+    # Exibe o resultado do modelo, se disponível
+    if st.session_state.resultado:
+        st.success(st.session_state.resultado)
+
+   # Mensagem de tempo restante
+   if not habilitar_botao:
+        st.warning(f"O botão será habilitado novamente em {int(tempo_restante)} segundos.")
+        # Aguarda o tempo restante e força o rerender
+        time.sleep(tempo_restante)
+        st.experimental_rerun()  # Recarrega a interface para habilitar o botão
+    """
     # Verifica se já passou 1 minuto desde o último clique
-    habilitar_botao = (
+    #habilitar_botao = (
     st.session_state.ultimo_click is None or datetime.now() - st.session_state.ultimo_click >= timedelta(minutes=1)
     )
 
@@ -217,7 +245,7 @@ if option == 'Pesquisar':
         segundos_restantes = int(tempo_restante.total_seconds())
         st.warning(f"O botão será habilitado novamente em {segundos_restantes} segundos.")
         st.experimental_rerun() 
-        
+     """   
     ##################################
     """
     if st.button("INICIAR"):
