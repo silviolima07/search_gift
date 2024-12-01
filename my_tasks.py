@@ -2,7 +2,7 @@ from crewai import Task
 import streamlit as st
 from my_agents import guia_compras
 from crewai_tools import SerperDevTool
-
+import json
 from dotenv import load_dotenv
 import os
 
@@ -42,16 +42,16 @@ recomendar = Task(
     ),
     expected_output=(
         """
-        Um dicionário com as informações de 3 presentes recomendados.
+        Um JSON válido contendo as informações de 3 presentes recomendados:
         {
-        'Nome': [<nome1>, <nome2>, <nome3>],
-        'Descricao': [<descricao1>, <descricao2>, <descricao3>],
-        'Preço': [<preco1>, <preco2>, <preco3>],
+            "Nome": ["<nome1>", "<nome2>", "<nome3>"],
+            "Descricao": ["<descricao1>", "<descricao2>", "<descricao3>"],
+            "Preco": ["<preco1>", "<preco2>", "<preco3>"]
         }
         """
     ),
     agent=guia_compras,
-    output_file='presentes.csv',
+    output_file='presentes.json',
     tools=[serper_tool],  # Ferramenta configurada
 )
 
