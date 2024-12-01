@@ -212,11 +212,11 @@ if option == 'Pesquisar':
         # Salva o momento do clique
         st.session_state.ultimo_click = datetime.now()
         # Executa o modelo e salva o resultado
-        st.session_state.resultado = executar_modelo()
+        st.session_state.result = executar_modelo()
 
     # Exibe o resultado do modelo, se disponível
-    if st.session_state.resultado:
-        st.success(st.session_state.resultado)
+    if st.session_state.result:
+        st.success(st.session_state.result)
 
     # Mensagem de tempo restante
     if not habilitar_botao:
