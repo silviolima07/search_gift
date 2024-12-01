@@ -194,6 +194,8 @@ if option == 'Pesquisar':
         # Simula a chamada do CrewAI
         #time.sleep(5)  # Simula tempo de processamento
         result = crew.kickoff(inputs=inputs)
+        # Exibe a resposta no Streamlit
+        validar_arquivo_markdown(output_file)
         return "Resultado gerado com sucesso!"
 
     # Verifica se já passou 1 minuto desde o último clique
