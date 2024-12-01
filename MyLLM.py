@@ -9,4 +9,4 @@ class MyLLM():
     LLAMA3_70B    = LLM(model='llama3-70b-8192')
     GROQ_LLAMA    = LLM(model='groq/llama-3.2-3b-preview')
     GROQ_MIXTRAL    = LLM(model='groq/mixtral-8x7b-32768')
-    GROQ_LLAMA2    = LLM(model='llama-3.2-11b-vision-preview')
+    GROQ_LLAMA2    = LLM(model='groq/llama-3.2-11b-vision-preview')
