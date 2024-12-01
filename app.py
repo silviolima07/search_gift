@@ -179,7 +179,7 @@ if option == 'Pesquisar':
     flag = True
 
     if flag == False:
-        st.write('Aguarde 30 segundos")
+        st.write('Aguarde 30 segundos')
         time.sleep(30)
     if st.button("INICIAR") and flag:
         inputs = {
