@@ -173,7 +173,7 @@ if option == 'Pesquisar':
     st.write("LLM: ", llm.model)
     st.write("LLM: ", dir(llm.model))
     #st.write("Max tokens: ", dir(llm.max_tokens))
-    st.write("Max completion tokens: ", getattr(llm.model, 'max_tokens','limite nao especificado')
+    st.write("Max completion tokens: ", getattr(llm.model, 'max_tokens','limite nao especificado'))
     #teste = LLM(model=llm.model)
     #st.write("Atributes: ", dir(teste))
     
