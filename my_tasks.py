@@ -48,7 +48,7 @@ recomendar = Task(
         'Descricao': [<descricao1>, <descricao2>, <descricao3>],
         'Preço': [<preco1>, <preco2>, <preco3>],
         }
-        """
+        """ ),
     agent=guia_compras,
     tools=[serper_tool],  # Ferramenta configurada
 )
