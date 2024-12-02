@@ -65,12 +65,8 @@ Não mostrar resposta na console, apenas salve resultado numa lista formato Mark
     expected_output =
     """
         Uma lista formatada em Markdown com as informações dos presentes:
-        
-        1.
         Nome: [Nome do presente]
-        
         Descrição: Breve descrição do presente
-        
         Preço: Valor do present
     """,
     agent=guia_compras,
