@@ -64,7 +64,7 @@ Não mostrar resposta na console, apenas salve resultado numa lista formato Mark
 """ ,
     expected_output =
     """ 
-        *** Nome:{Nome do presente\n
+        *** Nome:Nome do presente\n
         *** Descrição: Breve descrição do presente\n
         *** Preço: Valor do presente
     """,
