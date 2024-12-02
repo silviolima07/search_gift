@@ -65,7 +65,7 @@ Não mostrar resposta na console, apenas salve resultado numa lista formato Mark
     expected_output =
     """ 
         Nome:Nome do presente\n
-        Descrição: Breve descrição do presente\n
+        Descrição: descrição básica do presente em 3 palavras.\n
         Preço: Valor do presente
     """,
     agent=guia_compras,
