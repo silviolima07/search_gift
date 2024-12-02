@@ -260,7 +260,7 @@ if option == 'Pesquisar':
        
     ##################################
     
-    if st.button("INICIAR") and flag == True :
+    if st.button("INICIAR"):
         inputs = {
             'site': url,
             'genero':genero,
@@ -288,8 +288,8 @@ if option == 'Pesquisar':
                 #st.write(output_file)
                 validar_arquivo_markdown(output_file.lower())
                 st.write("Espere 60 segundos antes de executar novamente")
-                flag = False
-                st.write(flag)
+                #flag = False
+                #st.write(flag)
                 time.sleep(60)
                 
             except Exception as e:
