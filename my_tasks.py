@@ -43,8 +43,7 @@ Não mostrar resposta na console, apenas salve resultado numa lista formato Mark
         Uma lista formatada em Markdown com as informações dos presentes:
         - **Nome:** [Nome do presente]
         - **Descrição:** Breve descrição do presente.
-        - **Preço:** Valor do presente.
-        - **Link:** [Link para o produto]
+        - **Preço:** Valor do presente
     """,
     agent=guia_compras,
     tools=[serper_tool],  # Ferramenta configurada
