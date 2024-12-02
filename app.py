@@ -101,22 +101,22 @@ if option == 'Pesquisar':
     
     if faixa == '5-10' and genero == 'Masculino':
             genero = 'menino'
-            tipo='educativos'
+            tipo='educativo(s)'
     elif faixa == '5-10' and genero == 'Feminino':
             genero = 'menina'
-            tipo='educativos'
+            tipo='educativo(s)'
     elif faixa == '15-20' and genero == 'Masculino':
             genero = 'menino adolescente '
-            tipo='interessantes'
+            tipo='interessante(s)'
     elif faixa == '15-20' and genero == 'Feminino':
             genero = 'uma menina adolescente'
-            tipo='interessantes'
+            tipo='interessante(s)'
     elif faixa == '30-40' and genero == 'Masculino':
             genero = 'homem'
-            tipo='uteis'
+            tipo='util(eis)'
     else:
             genero = 'mulher'
-            tipo='uteis'
+            tipo='util(eis)'
     
     st.markdown("### Abaixo de:")
     preco = st.radio("Preço  ",[50, 100, 200, 300,400,500], horizontal = True)
