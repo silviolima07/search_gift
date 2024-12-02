@@ -36,7 +36,7 @@ recomendar = Task(
     description =""" 
 Use o SerperDevTool para pesquisar somente no site {site} do Brasil. 
 Encontre e recomende 2 presentes {tipo} para {genero}, com valor abaixo de {preco}. 
-Retorne resultado lista formato Markdown com as recomendações. Deve ter mome, breve descrição, preço e link.
+Não mostrar resposta na console, apenas salve resultado numa lista formato Markdown.
 """ ,
     expected_output =
     """
