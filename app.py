@@ -278,7 +278,7 @@ if option == 'Pesquisar':
                 #arquivo = validar_arquivo_csv('presentes.csv')
                 #df = pd.read_csv(arquivo)
                 #st.table(df)
-                #st.write(result.token_usage)
+                st.write(result.token_usage)
                 
                 
                 # Exibe a resposta no Streamlit
