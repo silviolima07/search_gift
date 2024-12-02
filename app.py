@@ -29,7 +29,9 @@ warnings.filterwarnings("ignore", category=UserWarning)
 warnings.filterwarnings("ignore", message="Overriding of current TracerProvider is not allowed")
 
 # Nome do arquivo gerado pela task
-output_file = "LISTA_PRESENTES.md"
+output_file = "lista_presentes.md"
+
+qtd= 1 # total de presentes recomendados
 
 # Função para validar e ler o arquivo
 def validar_arquivo_markdown(file_path):
@@ -150,7 +152,7 @@ if option == 'Pesquisar':
     busca= "Site:"
     st.markdown("#### "+str(f'{url}'))
     
-    busca= f"Pesquisar 2 presentes {tipo}  para {genero}."     
+    busca= f"Pesquisar {qtd} presente(s) {tipo}  para {genero}."     
     st.markdown("#### "+str(f'{busca}'))
     
     busca= f"Custo abaixo de R$ {preco}."     
@@ -262,8 +264,8 @@ if option == 'Pesquisar':
             'site': url,
             'genero':genero,
             'preco':preco,
-            'tipo':tipo
-            #'search_query': f"Usar a ferramenta de busca e pesquisar na url {'site'} presentes para menino de 5 anos"
+            'tipo':tipo,
+            'qtd': qtd
         }
         #st.markdown("### '+f"Usar a ferramenta de busca e pesquisar no site {site},  3 presentes {tipo}  para {genero}.")
         
