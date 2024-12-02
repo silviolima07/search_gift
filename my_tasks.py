@@ -64,9 +64,11 @@ Não mostrar resposta na console, apenas salve resultado numa lista formato Mark
 """ ,
     expected_output =
     """ 
-        Nome:Nome do presente\n
-        Descrição: descrição básica do presente em 3 palavras.\n
-        Preço: Valor do presente
+        Nome do presente\n
+        
+        Descrição básica do presente em 3 palavras.\n
+        
+        Preço do presente
     """,
     agent=guia_compras,
     tools=[serper_tool],  # Ferramenta configurada
