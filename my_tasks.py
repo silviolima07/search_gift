@@ -58,7 +58,7 @@ serper_tool.cache_function = funcao_cache
 recomendar = Task(
     description =""" 
 Use o SerperDevTool para pesquisar somente no site {site} do Brasil. 
-Encontre e recomende 1 presente {tipo} para {genero}, com valor abaixo de {preco}. 
+Encontre e recomende {qtd} presente(s) {tipo} para {genero}, com valor abaixo de {preco}. 
 Não mostrar resposta na console, apenas salve resultado numa lista formato Markdown.
 """ ,
     expected_output =
