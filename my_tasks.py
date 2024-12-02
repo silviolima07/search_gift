@@ -33,22 +33,22 @@ serper_tool.n_results = 10
 
 # Configuração da Task
 recomendar = Task(
-    description=(
-        """
-        Use o SerperDevTool para pesquisar somente no site {site} do Brasil. 
-        Encontre e recomende 1 presente {tipo} para {genero}, com valor abaixo de {preco}. 
-        Retorne o resultado em um arquivo CSV com as colunas:Nome , Descrição minima  e Preço dos presentes.
-        Apresenta na saída o resultado.
-        """
-    ),
-    expected_output=(
-        """
-        Um arquivo CSV contendo as informações de 1 presente recomendado com as colunas:
-        Nome, Descrição e Preço.
-        """ ),
+    description =""" 
+Use o SerperDevTool para pesquisar somente no site {site} do Brasil. 
+Encontre e recomende 2 presentes {tipo} para {genero}, com valor abaixo de {preco}. 
+Retorne resultado lista formato Markdown com as recomendações. Deve ter mome, breve descrição, preço e link.
+""" ,
+    expected_output =
+    """
+        Uma lista formatada em Markdown com as informações dos presentes:
+        - **Nome:** [Nome do presente]
+        - **Descrição:** Breve descrição do presente.
+        - **Preço:** Valor do presente.
+        - **Link:** [Link para o produto]
+    """,
     agent=guia_compras,
     tools=[serper_tool],  # Ferramenta configurada
-    output_file="presentes.csv"  # Salvar diretamente como CSV
+    output_file="lista_presentes.md"  # Salvar diretamente como CSV
 )
 
 
