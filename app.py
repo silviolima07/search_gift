@@ -280,8 +280,9 @@ if option == 'Pesquisar':
                 
                 # Exibe a resposta no Streamlit
                 st.markdown(f"### Presentes recomendados")
-                #st.markdown(result)  # Função que processa e exibe a resposta
+                st.markdown(result)  # Função que processa e exibe a resposta
                 # Chamada da função para validar
+                st.write(output_file)
                 validar_arquivo_markdown(output_file)
                 st.write("Espere 60 segundos antes de executar novamente")
                 time.sleep(60)
