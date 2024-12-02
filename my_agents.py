@@ -34,10 +34,10 @@ serper_tool.n_results = 10
 
    
 guia_compras = Agent(
-        role="guia de compras",
-        goal="Orientar pessoas que fazem compras.",
+        role="Pesquisador",
+        goal="Pesquisar e recomendar 3 presentes",
         backstory=
-            "Você é responsável por orientar na melhor compra."   
+            "Você é especalista em pesquisa de presentes."   
         ,
         llm=llm, # estava provider=provider
         verbose=True,
