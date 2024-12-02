@@ -41,10 +41,11 @@ Não mostrar resposta na console, apenas salve resultado numa lista formato Mark
     expected_output =
     """
         Uma lista formatada em Markdown com as informações dos presentes:
+        
         1)
-        *** Nome:** [Nome do presente]
-        *** Descrição:** Breve descrição do presente.
-        *** Preço:** Valor do presente
+        *** Nome:** [Nome do presente]\n
+        *** Descrição:** Breve descrição do presente.\n
+        *** Preço:** Valor do presente\n
     """,
     agent=guia_compras,
     tools=[serper_tool],  # Ferramenta configurada
