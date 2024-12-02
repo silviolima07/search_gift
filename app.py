@@ -17,6 +17,7 @@ import time
 load_dotenv()
 import os
 
+flag = True
 # Verifica se as chaves estão acessíveis
 #assert os.getenv("OPENAI_API_KEY"), "OPENAI_API_KEY não está configurada!"
 assert os.getenv("GROQ_API_KEY"), "GROQ_API_KEY não está configurada!"
@@ -258,8 +259,8 @@ if option == 'Pesquisar':
     #    st.experimental_rerun() 
        
     ##################################
-    
-    if st.button("INICIAR") :
+    st.write(flag)
+    if st.button("INICIAR") and flag = True :
         inputs = {
             'site': url,
             'genero':genero,
@@ -287,6 +288,7 @@ if option == 'Pesquisar':
                 #st.write(output_file)
                 validar_arquivo_markdown(output_file.lower())
                 st.write("Espere 60 segundos antes de executar novamente")
+                flag = False
                 time.sleep(60)
                 
             except Exception as e:
