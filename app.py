@@ -289,6 +289,7 @@ if option == 'Pesquisar':
                 validar_arquivo_markdown(output_file.lower())
                 st.success("Espere 60 segundos antes de executar novamente, caso saida seja apresentada.")
                 st.info("Se não aguardar, numero de tokens por minuto (TPM) pode ser ultrapassado e irá falhar.")
+                st.write(result.token_usage['total_tokens'))
                 #flag = False
                 #st.write(flag)
                 time.sleep(60)
