@@ -278,7 +278,7 @@ if option == 'Pesquisar':
                 #arquivo = validar_arquivo_csv('presentes.csv')
                 #df = pd.read_csv(arquivo)
                 #st.table(df)
-                st.write(result.token_usage)
+                #st.write(result.token_usage)
                 
                 
                 # Exibe a resposta no Streamlit
@@ -289,7 +289,7 @@ if option == 'Pesquisar':
                 validar_arquivo_markdown(output_file.lower())
                 st.success("Espere 60 segundos antes de executar novamente, caso saida seja apresentada.")
                 st.info("Se não aguardar, numero de tokens por minuto (TPM) pode ser ultrapassado e irá falhar.")
-                st.write(result.token_usage['total_tokens'])
+                st.write(result.token_usage.total_tokens])
                 #flag = False
                 #st.write(flag)
                 time.sleep(60)
