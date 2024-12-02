@@ -272,19 +272,19 @@ if option == 'Pesquisar':
                 # Executa o Crew, o que deve agora acionar os agentes e tasks
                 result = crew.kickoff(inputs=inputs)  # Faz a chamada ao crew.kickoff
                 
-                arquivo = validar_arquivo_csv('presentes.csv')
-                df = pd.read_csv(arquivo)
-                st.table(df)
-                st.write(result.token_usage)
+                #arquivo = validar_arquivo_csv('presentes.csv')
+                #df = pd.read_csv(arquivo)
+                #st.table(df)
+                #st.write(result.token_usage)
                 
                 
                 # Exibe a resposta no Streamlit
-                #st.markdown(f"### Presentes recomendados")
+                st.markdown(f"### Presentes recomendados")
                 #st.markdown(result)  # Função que processa e exibe a resposta
                 # Chamada da função para validar
-                #validar_arquivo_markdown(output_file)
-                #time.sleep(60)
-                #st.write("Espere 60 segundos antes de executar novamente")
+                validar_arquivo_markdown(output_file)
+                st.write("Espere 60 segundos antes de executar novamente")
+                time.sleep(60)
                 
             except Exception as e:
                 st.error(f"Error no crew.kickoff: {e}")
