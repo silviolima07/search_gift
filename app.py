@@ -287,12 +287,13 @@ if option == 'Pesquisar':
                 # Chamada da função para validar
                 #st.write(output_file)
                 validar_arquivo_markdown(output_file.lower())
-                st.write("Espere 60 segundos antes de executar novamente, caso saida seja apresentada.")
-                st.write("Se não aguardar, numero de tokens por minuto (TPM) é ultrapassado.")
+                st.warn("Espere 60 segundos antes de executar novamente, caso saida seja apresentada.")
+                st.warn("Se não aguardar, numero de tokens por minuto (TPM) é ultrapassado.")
                 #flag = False
                 #st.write(flag)
                 time.sleep(60)
                 st.write("Liberado executar novamente")
+                time.sleep(5)
                 
             except Exception as e:
                 st.error(f"Error no crew.kickoff: {e}")
