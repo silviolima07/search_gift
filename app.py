@@ -101,10 +101,10 @@ if option == 'Pesquisar':
     horizontal = True)
     
     if faixa == '5-10' and genero == 'Masculino':
-            genero = 'menino'
+            genero = 'menino/criança'
             tipo='educativo'
     elif faixa == '5-10' and genero == 'Feminino':
-            genero = 'menina'
+            genero = 'menina/criança'
             tipo='educativo'
     elif faixa == '15-20' and genero == 'Masculino':
             genero = 'menino adolescente '
