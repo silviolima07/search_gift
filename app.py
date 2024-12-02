@@ -31,7 +31,7 @@ warnings.filterwarnings("ignore", message="Overriding of current TracerProvider 
 # Nome do arquivo gerado pela task
 output_file = "lista_presentes.md"
 
-qtd= 1 # total de presentes recomendados
+qtd= 2 # total de presentes recomendados
 
 # Função para validar e ler o arquivo
 def validar_arquivo_markdown(file_path):
