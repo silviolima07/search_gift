@@ -66,7 +66,7 @@ Não mostrar resposta na console, apenas salve resultado numa lista formato Mark
     """ 
         Nome do presente\n
         
-        Descrição básica do presente.\n
+        Descrição do presente.\n
         
         Preço do presente
     """,
