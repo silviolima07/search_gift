@@ -63,12 +63,10 @@ Resposta deve conter no máximo {qtd} items.
 Não mostrar resposta na console, apenas salve resultado numa lista formato Markdown.
 """ ,
     expected_output =
-    """
-        Uma lista formatada em Markdown com as informações dos presentes:
-        
+    """\ 
         *** Nome: Nome do presente\n
         *** Descrição: Breve descrição do presente\n
-        *** Preço: Valor do present
+        *** Preço: Valor do presente
     """,
     agent=guia_compras,
     tools=[serper_tool],  # Ferramenta configurada
