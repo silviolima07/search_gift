@@ -260,7 +260,7 @@ if option == 'Pesquisar':
        
     ##################################
     st.write(flag)
-    if st.button("INICIAR") and flag = True :
+    if st.button("INICIAR") and flag == True :
         inputs = {
             'site': url,
             'genero':genero,
