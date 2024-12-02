@@ -287,7 +287,7 @@ if option == 'Pesquisar':
                 # Chamada da função para validar
                 #st.write(output_file)
                 validar_arquivo_markdown(output_file.lower())
-                st.success("Espere 60 segundos antes de executar novamente, caso saida seja apresentada.")
+                st.success("Parabéns. Espere 60 segundos antes de executar novamente.")
                 st.info("Se não aguardar, numero de tokens por minuto (TPM) pode ser ultrapassado e irá falhar.")
                 st.write("Total Tokens consumidos: prompt + completion", result.token_usage.total_tokens)
                 st.write('Prompt tokens enviados:', result.token_usage.prompt_tokens)
