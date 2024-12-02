@@ -287,7 +287,7 @@ if option == 'Pesquisar':
                 # Chamada da função para validar
                 #st.write(output_file)
                 validar_arquivo_markdown(output_file.lower())
-                st.warn("Espere 60 segundos antes de executar novamente, caso saida seja apresentada.")
+                st.info("Espere 60 segundos antes de executar novamente, caso saida seja apresentada.")
                 st.warn("Se não aguardar, numero de tokens por minuto (TPM) é ultrapassado.")
                 #flag = False
                 #st.write(flag)
