@@ -41,7 +41,10 @@ Não mostrar resposta na console, apenas salve resultado numa lista formato Mark
     expected_output =
     """
         Uma lista formatada em Markdown com as informações dos presentes:
-        - **Nome:** [Nome do presente]
+        - **1)Nome:** [Nome do presente]
+        - **Descrição:** Breve descrição do presente.
+        - **Preço:** Valor do presente
+        - **2)Nome:** [Nome do presente]
         - **Descrição:** Breve descrição do presente.
         - **Preço:** Valor do presente
     """,
