@@ -259,7 +259,7 @@ if option == 'Pesquisar':
     #    st.experimental_rerun() 
        
     ##################################
-    st.write(flag)
+    
     if st.button("INICIAR") and flag == True :
         inputs = {
             'site': url,
@@ -289,6 +289,7 @@ if option == 'Pesquisar':
                 validar_arquivo_markdown(output_file.lower())
                 st.write("Espere 60 segundos antes de executar novamente")
                 flag = False
+                st.write(flag)
                 time.sleep(60)
                 
             except Exception as e:
