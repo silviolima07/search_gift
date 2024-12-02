@@ -40,7 +40,7 @@ guia_compras = Agent(
             "Você é especalista em pesquisa de presentes."   
         ,
         llm=llm, # estava provider=provider
-        verbose=True,
+        verbose=False,
         memory=False,
         tools=[serper_tool]
     )
