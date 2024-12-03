@@ -268,7 +268,7 @@ if option == 'Pesquisar':
         }
     st.markdown("#### Prompt enviado pro modelo")
     st.write(f'\nUse o SerperDevTool para pesquisar somente no site {site} do Brasil.')
-    st.write(f'Encontre e recomende no maximo {qtd} presente {tipo} para {genero}, com valor abaixo de {preco}.')
+    st.write(f'Encontre e recomende no maximo {qtd} presentes {tipo} para {genero}, com valor abaixo de {preco}.')
     st.write(f'Resposta deve conter no máximo {qtd} items.')
     st.write(f'Não mostrar resposta na console, apenas salve resultado numa lista formato Markdown.')
 
