@@ -148,16 +148,16 @@ if option == 'Pesquisar':
         }
     
     busca= "Usar a ferramenta de busca e pesquisar no site"
-    st.markdown("#### "+str(f'{busca}'))
+    #st.markdown("#### "+str(f'{busca}'))
 
     busca= "Site:"
-    st.markdown("#### "+str(f'{site}'))
+    #st.markdown("#### "+str(f'{site}'))
     
     busca= f"Pesquisar presente {tipo}  para {genero}."     
-    st.markdown("#### "+str(f'{busca}'))
+    #st.markdown("#### "+str(f'{busca}'))
     
     busca= f"Custo abaixo de R$ {preco}."     
-    st.markdown("#### "+str(f'{busca}'))
+    #st.markdown("#### "+str(f'{busca}'))
     
     # Configuração do CrewAI com o Groq via LiteLLM
     # Aqui estamos passando o provider diretamente para o agente e task
@@ -266,8 +266,8 @@ if option == 'Pesquisar':
             'tipo':tipo,
             'qtd': qtd
         }
-
-    st.write(f'Use o SerperDevTool para pesquisar somente no site {site} do Brasil.')
+    st.markdown("#### Prompt enviado pro modelo")
+    st.write(f'\nUse o SerperDevTool para pesquisar somente no site {site} do Brasil.')
     st.write(f'Encontre e recomende no maximo {qtd} presente {tipo} para {genero}, com valor abaixo de {preco}.')
     st.write(f'Resposta deve conter no máximo {qtd} items.')
     st.write(f'Não mostrar resposta na console, apenas salve resultado numa lista formato Markdown.')
