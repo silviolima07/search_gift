@@ -147,6 +147,11 @@ if option == 'Pesquisar':
             #'search_query': f"Usar a ferramenta de busca e pesquisar {url} na url {site} presentes {tipo} para {genero}"
         }
 
+   st.write(f"Use o SerperDevTool para pesquisar somente no site {site} do Brasil.")
+   st.write(f'Encontre e recomende no maximo {qtd} presente {tipo} para {genero}, com valor abaixo de {preco}.')
+   st.write(f'Resposta deve conter no máximo {qtd} items.')
+   st.write(f'Não mostrar resposta na console, apenas salve resultado numa lista formato Markdown.')
+    
     busca= "Usar a ferramenta de busca e pesquisar no site"
     st.markdown("#### "+str(f'{busca}'))
 
