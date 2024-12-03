@@ -295,7 +295,7 @@ if option == 'Pesquisar':
                 
                 
                 # Exibe a resposta no Streamlit
-                st.markdown(f"### Presentes recomendados")
+                st.markdown(f"### Lista de Presentes recomendados")
                 #st.markdown(result)  # Função que processa e exibe a resposta
                 # Chamada da função para validar
                 #st.write(output_file)
