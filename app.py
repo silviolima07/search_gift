@@ -272,7 +272,7 @@ if option == 'Pesquisar':
     st.write(f'Resposta deve conter no máximo {qtd} items.')
     st.write(f'Não mostrar resposta na console, apenas salve resultado numa lista formato Markdown.')
 
-    #if st.button("INICIAR"):
+    if st.button("INICIAR"):
     #    time.sleep(5)
     #    inputs = {
     #        'site': url,
