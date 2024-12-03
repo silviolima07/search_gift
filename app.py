@@ -137,7 +137,7 @@ if option == 'Pesquisar':
     st.markdown(html_page_crewai, unsafe_allow_html=True)
     
     #url = "https://loja.imaginarium.com.br/"
-    url = dict_loja.get(loja)
+    site = dict_loja.get(loja)
     
     inputs = {
             'site': url,
