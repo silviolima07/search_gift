@@ -146,11 +146,6 @@ if option == 'Pesquisar':
             'tipo':tipo
             #'search_query': f"Usar a ferramenta de busca e pesquisar {url} na url {site} presentes {tipo} para {genero}"
         }
-
-    st.write(f"Use o SerperDevTool para pesquisar somente no site {site} do Brasil.")
-    st.write(f'Encontre e recomende no maximo {qtd} presente {tipo} para {genero}, com valor abaixo de {preco}.')
-    st.write(f'Resposta deve conter no máximo {qtd} items.')
-    st.write(f'Não mostrar resposta na console, apenas salve resultado numa lista formato Markdown.')
     
     busca= "Usar a ferramenta de busca e pesquisar no site"
     st.markdown("#### "+str(f'{busca}'))
@@ -264,16 +259,28 @@ if option == 'Pesquisar':
     #    st.experimental_rerun() 
        
     ##################################
-
-    if st.button("INICIAR"):
-        time.sleep(5)
-        inputs = {
+    inputs = {
             'site': url,
             'genero':genero,
             'preco':preco,
             'tipo':tipo,
             'qtd': qtd
         }
+
+    st.write(f"Use o SerperDevTool para pesquisar somente no site {site} do Brasil.")
+    st.write(f'Encontre e recomende no maximo {qtd} presente {tipo} para {genero}, com valor abaixo de {preco}.')
+    st.write(f'Resposta deve conter no máximo {qtd} items.')
+    st.write(f'Não mostrar resposta na console, apenas salve resultado numa lista formato Markdown.')
+
+    #if st.button("INICIAR"):
+    #    time.sleep(5)
+    #    inputs = {
+    #        'site': url,
+    #        'genero':genero,
+    #        'preco':preco,
+    #        'tipo':tipo,
+    #        'qtd': qtd
+    #    }
         #st.markdown("### '+f"Usar a ferramenta de busca e pesquisar no site {site},  3 presentes {tipo}  para {genero}.")
         
         with st.spinner('Wait for it...searching and processing...wait please'):
