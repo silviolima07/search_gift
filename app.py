@@ -259,8 +259,9 @@ if option == 'Pesquisar':
     #    st.experimental_rerun() 
        
     ##################################
-    
+
     if st.button("INICIAR"):
+        time.sleep(5)
         inputs = {
             'site': url,
             'genero':genero,
