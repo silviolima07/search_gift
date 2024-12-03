@@ -73,7 +73,7 @@ Não mostrar resposta na console, apenas salve resultado numa lista formato Mark
     agent=guia_compras,
     tools=[serper_tool],  # Ferramenta configurada
     output_file="lista_presentes.md",  # Salvar diretamente como CSV
-    max_tokens = 2000
+    max_tokens = 1000
 )
 
 
