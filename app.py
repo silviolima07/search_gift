@@ -140,7 +140,7 @@ if option == 'Pesquisar':
     site = dict_loja.get(loja)
     
     inputs = {
-            'site': url,
+            'site': site,
             'genero':genero,
             'preco':preco,
             'tipo':tipo
@@ -260,7 +260,7 @@ if option == 'Pesquisar':
        
     ##################################
     inputs = {
-            'site': url,
+            'site': site,
             'genero':genero,
             'preco':preco,
             'tipo':tipo,
